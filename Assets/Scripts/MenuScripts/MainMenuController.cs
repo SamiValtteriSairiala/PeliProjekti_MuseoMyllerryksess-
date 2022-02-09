@@ -39,27 +39,27 @@ using UnityEngine.SceneManagement;
             }
         }
 
-        void PlayButton()
+        public void PlayButton()
         {
             // Change SampleScene to our main play scene!
             SceneManager.LoadScene("SampleScene");
         }
 
-        void SettingsButton()
+        public void SettingsButton()
         {
             //Activate settingsmenu canvas.
             SettingsMenu.SetActive(true);
             MainMenu.SetActive(false);
         }
 
-        void CloseSettingsButton()
+        public void CloseSettingsButton()
         {
             SettingsMenu.SetActive(false);
             MainMenu.SetActive(true);
             
         }
 
-        void Mute()
+        public void Mute()
         {
             // If audio is higher than 0 then mute listener.
             if(AudioListener.volume > 0)
