@@ -51,3 +51,4 @@ Logs/AssetImportWorker0-prev.log
 *.log
 *.log
 *.asset
+UserSettings/EditorUserSettings.asset
