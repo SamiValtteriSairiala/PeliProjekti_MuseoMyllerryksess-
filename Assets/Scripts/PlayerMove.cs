@@ -11,16 +11,32 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private GameObject LobbyScreen;
     [SerializeField] private GameObject UpperFloor;
     [SerializeField] private GameObject Cloakroom;
+
+    private GameObject ArrowUp;
+    private GameObject ArrowLeft;
+    private GameObject ArrowRight;
+    private GameObject ArrowDown;
     // Start is called before the first frame update
     void Start()
     {
-        
+        ArrowDown = GameObject.FindGameObjectWithTag("DownArrow");
+        ArrowLeft = GameObject.FindGameObjectWithTag("LeftArrow");
+        ArrowRight = GameObject.FindGameObjectWithTag("RightArrow");
+        ArrowUp = GameObject.FindGameObjectWithTag("UpArrow");
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Add here arrows to hide if for example you cannot go forward in Upperfloor.
+        if(UpperFloor.activeInHierarchy == true){
+            ArrowDown.SetActive(true);
+            ArrowUp.SetActive(false);
+        }
+
+        if(LobbyScreen.activeInHierarchy == true){
+            ArrowUp.SetActive(true);
+        }
     }
 
     void MoveArrowUpwards(){
@@ -69,5 +85,10 @@ public class PlayerMove : MonoBehaviour
 
     void DisableText(){
         LockedText.SetActive(false);
+        LobbyScreenAfter();
+    }
+
+    void LobbyScreenAfter(){
+        ArrowDown.SetActive(false);
     }
 }

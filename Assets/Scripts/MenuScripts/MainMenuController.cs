@@ -41,8 +41,8 @@ using UnityEngine.SceneManagement;
 
         public void PlayButton()
         {
-            // Change SampleScene to our main play scene!
-            SceneManager.LoadScene("SampleScene");
+            
+            SceneManager.LoadScene("Museum");
         }
 
         public void SettingsButton()
@@ -61,6 +61,7 @@ using UnityEngine.SceneManagement;
 
         public void Mute()
         {
+            // Need to change AudioListener to AudioMixer once we have sounds etc.
             // If audio is higher than 0 then mute listener.
             if(AudioListener.volume > 0)
             {
