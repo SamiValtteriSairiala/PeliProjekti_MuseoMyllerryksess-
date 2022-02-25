@@ -5,6 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
+    // Remember to make this false when player has "completed the game"
+    private bool DoorIsLocked = true;
+
+
     [SerializeField] private GameObject LockedText;
     // Add all "playable rooms" here
     [SerializeField] private GameObject OutsideScreen;
@@ -34,9 +38,15 @@ public class PlayerMove : MonoBehaviour
             ArrowUp.SetActive(false);
         }
 
-        if(LobbyScreen.activeInHierarchy == true){
+        // Activate ArrowUp when player has done tutorial.
+        if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == true){
             ArrowUp.SetActive(true);
+            ArrowDown.SetActive(false);
         }
+        if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == false){
+            ArrowDown.SetActive(true);
+        }
+
     }
 
     void MoveArrowUpwards(){
@@ -86,6 +96,7 @@ public class PlayerMove : MonoBehaviour
     void DisableText(){
         LockedText.SetActive(false);
         LobbyScreenAfter();
+        DoorIsLocked = true;
     }
 
     void LobbyScreenAfter(){
