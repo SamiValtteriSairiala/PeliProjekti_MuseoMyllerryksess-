@@ -7,6 +7,7 @@ public class PlayerMove : MonoBehaviour
 
     // Remember to make this false when player has "completed the game"
     private bool DoorIsLocked = true;
+    public bool HasDoneTutorial = false;
 
 
     [SerializeField] private GameObject LockedText;
@@ -40,10 +41,15 @@ public class PlayerMove : MonoBehaviour
 
         // Activate ArrowUp when player has done tutorial.
         if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == true){
-            ArrowUp.SetActive(true);
+            if(HasDoneTutorial == true){
+                ArrowUp.SetActive(true);
+            }
             ArrowDown.SetActive(false);
         }
         if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == false){
+            if(HasDoneTutorial == true){
+                ArrowUp.SetActive(true);
+            }
             ArrowDown.SetActive(true);
         }
 
