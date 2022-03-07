@@ -10,11 +10,11 @@ public class PlayerMove : MonoBehaviour
     public bool HasDoneTutorial = false;
 
 
-    [SerializeField] private GameObject LockedText;
+    // [SerializeField] private GameObject LockedText;
     // Add all "playable rooms" here
     [SerializeField] private GameObject OutsideScreen;
     [SerializeField] private GameObject LobbyScreen;
-    [SerializeField] private GameObject UpperFloor;
+    //[SerializeField] private GameObject UpperFloor;
     [SerializeField] private GameObject Cloakroom;
 
     private GameObject ArrowUp;
@@ -34,28 +34,28 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         // Add here arrows to hide if for example you cannot go forward in Upperfloor.
-        if(UpperFloor.activeInHierarchy == true){
-            ArrowDown.SetActive(true);
-            ArrowUp.SetActive(false);
-        }
+        // if(UpperFloor.activeInHierarchy == true){
+        //     ArrowDown.SetActive(true);
+        //     ArrowUp.SetActive(false);
+        // }
 
         // Activate ArrowUp when player has done tutorial.
-        if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == true){
-            if(HasDoneTutorial == true){
-                ArrowUp.SetActive(true);
-            }
-            ArrowDown.SetActive(false);
-        }
-        if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == false){
-            if(HasDoneTutorial == true){
-                ArrowUp.SetActive(true);
-            }
-            ArrowDown.SetActive(true);
-        }
+        // if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == true){
+        //     if(HasDoneTutorial == true){
+        //         ArrowUp.SetActive(true);
+        //     }
+        //     ArrowDown.SetActive(false);
+        // }
+        // if(LobbyScreen.activeInHierarchy == true && DoorIsLocked == false){
+        //     if(HasDoneTutorial == true){
+        //         ArrowUp.SetActive(true);
+        //     }
+        //     ArrowDown.SetActive(true);
+        // }
 
     }
 
-    void MoveArrowUpwards(){
+    public void MoveArrowUpwards(){
         //When pressed arrow pointing upwards then check what "scene" is active and change it to next one.
         if(OutsideScreen.activeInHierarchy == true){
             OutsideScreen.SetActive(false);
@@ -65,11 +65,12 @@ public class PlayerMove : MonoBehaviour
 
         if(LobbyScreen.activeInHierarchy == true){
             LobbyScreen.SetActive(false);
-            UpperFloor.SetActive(true);  
+            // UpperFloor.SetActive(true);  
+            
         }
     }
 
-    void MoveArrowRight(){
+    public void MoveArrowRight(){
          //When pressed arrow pointing right then check what "scene" is active and change it to next one.
         if(LobbyScreen.activeInHierarchy == true){
             LobbyScreen.SetActive(false);
@@ -78,7 +79,7 @@ public class PlayerMove : MonoBehaviour
 
     }
     
-    void MoveArrowLeft(){
+    public void MoveArrowLeft(){
         //When pressed arrow pointing left then check what "scene" is active and change it to next one.
         if(Cloakroom.activeInHierarchy == true){
             Cloakroom.SetActive(false);
@@ -86,26 +87,26 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    void MoveArrowDown(){
-        if(UpperFloor.activeInHierarchy == true){
-            UpperFloor.SetActive(false);
-            LobbyScreen.SetActive(true);
-        }
+    public void MoveArrowDown(){
+        // if(UpperFloor.activeInHierarchy == true){
+        //     UpperFloor.SetActive(false);
+        //     LobbyScreen.SetActive(true);
+        // }
 
-        if(LobbyScreen.activeInHierarchy == true){
-            LockedText.SetActive(true);
-            //Show text for 5 seconds, then disab
-            Invoke("DisableText", 5f);
-        }
+        // if(LobbyScreen.activeInHierarchy == true){
+        //     LockedText.SetActive(true);
+        //     //Show text for 5 seconds, then disab
+        //     Invoke("DisableText", 5f);
+        // }
     }
 
-    void DisableText(){
-        LockedText.SetActive(false);
-        LobbyScreenAfter();
-        DoorIsLocked = true;
-    }
+    // void DisableText(){
+    //     LockedText.SetActive(false);
+    //     LobbyScreenAfter();
+    //     DoorIsLocked = true;
+    // }
 
-    void LobbyScreenAfter(){
-        ArrowDown.SetActive(false);
-    }
+    // void LobbyScreenAfter(){
+    //     ArrowDown.SetActive(false);
+    // }
 }
