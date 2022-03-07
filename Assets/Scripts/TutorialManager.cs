@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TutorialManager : MonoBehaviour
 {
+    // Activate this to true when player has done tutorial and add tutorial components here.
     public bool hasCompletedTutorial = false;
     // Start is called before the first frame update
     void Start()
