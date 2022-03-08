@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 
 
@@ -11,6 +12,8 @@ using UnityEngine.SceneManagement;
         [SerializeField] private GameObject startButton;
         [SerializeField] private GameObject SettingsMenu;
         [SerializeField] private GameObject MainMenu;
+
+        [SerializeField] private GameObject AudioMusicSource;
         // Start is called before the first frame update
         void Start()
         {
@@ -72,6 +75,15 @@ using UnityEngine.SceneManagement;
                 AudioListener.volume = 1;
             }
             
+        }
+
+        public void MuteSFX(){
+            if(AudioMusicSource.activeInHierarchy == true){
+           AudioMusicSource.SetActive(false);
+            }
+            if(AudioMusicSource.activeInHierarchy == false){
+           AudioMusicSource.SetActive(true);
+            }
         }
     }
 
