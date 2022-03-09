@@ -13,7 +13,7 @@ using UnityEngine.Audio;
         [SerializeField] private GameObject SettingsMenu;
         [SerializeField] private GameObject MainMenu;
 
-        [SerializeField] private GameObject AudioMusicSource;
+        
         // Start is called before the first frame update
         void Start()
         {
@@ -62,28 +62,6 @@ using UnityEngine.Audio;
             
         }
 
-        public void Mute()
-        {
-            // Need to change AudioListener to AudioMixer once we have sounds etc.
-            // If audio is higher than 0 then mute listener.
-            if(AudioListener.volume > 0)
-            {
-                AudioListener.volume = 0;
-            }
-            if(AudioListener.volume < 0)
-            {
-                AudioListener.volume = 1;
-            }
-            
-        }
-
-        public void MuteSFX(){
-            if(AudioMusicSource.activeInHierarchy == true){
-           AudioMusicSource.SetActive(false);
-            }
-            if(AudioMusicSource.activeInHierarchy == false){
-           AudioMusicSource.SetActive(true);
-            }
-        }
+        
     }
 

@@ -783,7 +783,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MusicIsMuted: 0
+  SFXisMuted: 0
   MusicMixer: {fileID: 24100000, guid: 01dbdb2d328760540b1b75fd185dcdfc, type: 2}
+  SFXMixer: {fileID: 24100000, guid: c50b3316723b81b4496402c23ba08747, type: 2}
 --- !u!82 &612790891
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1294,7 +1296,6 @@ MonoBehaviour:
   startButton: {fileID: 1034174912}
   SettingsMenu: {fileID: 1162807289}
   MainMenu: {fileID: 291807434}
-  AudioMusicSource: {fileID: 0}
 --- !u!4 &828044011
 Transform:
   m_ObjectHideFlags: 0

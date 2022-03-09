@@ -6,7 +6,9 @@ using UnityEngine.Audio;
 public class SoundManager : MonoBehaviour
 {
     public bool MusicIsMuted = false;
+    public bool SFXisMuted = false;
     public AudioMixer MusicMixer;
+    public AudioMixer SFXMixer;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,12 @@ public class SoundManager : MonoBehaviour
         if(MusicIsMuted == false){
             UnMuteMusic();
         }
+        if(SFXisMuted == true){
+            MuteSFX();
+        }
+        if(SFXisMuted == false){
+            UnMuteSFX();
+        }
     }
 
     public void MuteMusic(){
@@ -34,6 +42,14 @@ public class SoundManager : MonoBehaviour
     public void UnMuteMusic(){
         MusicMixer.SetFloat("MusicVolume", 0f);
         MusicIsMuted = false;
+    }
+    public void MuteSFX(){
+        SFXMixer.SetFloat("SFXVolume", -80f);
+        SFXisMuted = true;
+    }
+    public void UnMuteSFX(){
+        SFXMixer.SetFloat("SFXVolume", 0f);
+        SFXisMuted = false;
     }
 
 }
