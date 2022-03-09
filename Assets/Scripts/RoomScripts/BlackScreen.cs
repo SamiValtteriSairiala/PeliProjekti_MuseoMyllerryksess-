@@ -22,7 +22,7 @@ public class BlackScreen : MonoBehaviour
     public void BlackenScreen(){
         isBlack = true;
         BlackScreenCanvas.SetActive(true);
-        Invoke("DeBlackenScreen", 0.5f);
+        Invoke("DeBlackenScreen", 0.2f);
     }
 
     public void DeBlackenScreen(){

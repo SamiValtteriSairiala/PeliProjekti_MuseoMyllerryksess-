@@ -23,7 +23,10 @@ public class CloakRoomMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // If user presses back button close safetybox screen.
+        if(SafetyBox.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Escape)){
+            BackToCloakRoom();
+        }
     }
 
     public void MoveLeft(){
