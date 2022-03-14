@@ -6,14 +6,14 @@ using UnityEngine.U2D;
 public class Puzzle : MonoBehaviour
 {
     [SerializeField] private Transform emptySpace = null;
-    private Camera camera;
+    private Camera m_Camera;
     [SerializeField] private TileScript[] tiles;
     private int emptySpaceIndex = 15;
 
 
     void Start()
     {
-        camera = Camera.main;
+        m_Camera = Camera.main;
         Shuffle();
     }
 
@@ -21,7 +21,7 @@ public class Puzzle : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            Ray ray = m_Camera.ScreenPointToRay(Input.mousePosition);
             RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
             if (hit)
             {
@@ -51,6 +51,8 @@ public class Puzzle : MonoBehaviour
                 }
             }
         }
+        // Add victory condition.
+        // Close puzzle and do something ???
         // if (correctTiles == tiles.Length - 1);
     }
     public void Shuffle()
