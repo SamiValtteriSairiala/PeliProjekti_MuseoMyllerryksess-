@@ -2,31 +2,35 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TileScript : MonoBehaviour
+namespace PuzzleScript
 {
-    public Vector3 TargetPos;
-    private Vector3 correctPos;
-    public int number;
-    public bool inRightPlace;
 
-    // Start is called before the first frame update
-    void Awake()
+    public class TileScript : MonoBehaviour
     {
-        TargetPos = transform.position;
-        correctPos = transform.position;
-    }
+        public Vector3 TargetPos;
+        private Vector3 correctPos;
+        public int number;
+        public bool inRightPlace;
 
-    // Update is called once per frame
-    void Update()
-    {
-        transform.position = Vector3.Lerp(transform.position, TargetPos, 0.05f);
-        if (TargetPos == correctPos)
+        // Start is called before the first frame update
+        void Awake()
         {
-            inRightPlace = true;
+            TargetPos = transform.position;
+            correctPos = transform.position;
         }
-        else
+
+        // Update is called once per frame
+        void Update()
         {
-            inRightPlace = false;
+            transform.position = Vector3.Lerp(transform.position, TargetPos, 0.05f);
+            if (TargetPos == correctPos)
+            {
+                inRightPlace = true;
+            }
+            else
+            {
+                inRightPlace = false;
+            }
         }
     }
 }
