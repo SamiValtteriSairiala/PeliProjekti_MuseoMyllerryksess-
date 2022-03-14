@@ -26,7 +26,7 @@ public class Puzzle : MonoBehaviour
             if (hit)
             {
                 Debug.Log(hit.transform.name);
-                if (Vector2.Distance(emptySpace.position, hit.transform.position) < 2)
+                if (Vector2.Distance(emptySpace.position, hit.transform.position) < 2.5)
                 {
                     Vector2 lastEmptySpacePos = emptySpace.position;
                     TileScript thisTile = hit.transform.GetComponent<TileScript>();
