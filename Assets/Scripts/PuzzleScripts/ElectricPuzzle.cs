@@ -38,6 +38,7 @@ namespace PuzzleScripts
                     }
                 }
             }
+            
             if (FirstIsCorrect == true && SecondIsCorrect == true && ThirdIsCorrect == true && FourthIsCorrect == true && FifthIsCorrect == true)
             {
                 // Victory screen here.
