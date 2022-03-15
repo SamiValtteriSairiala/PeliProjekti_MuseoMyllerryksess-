@@ -22,11 +22,11 @@ public class Timer : MonoBehaviour
         if(TimerPaused == false){
             timer += Time.deltaTime;
         }
-        if(timer == 60f){
+        if(timer >= 60f){
             minutes += 1;
             timer = 0;
         }
-        TimerText.text = minutes.ToString("00") + timer.ToString("00");
+        TimerText.text = minutes.ToString("00") + ":" + timer.ToString("00");
         
     }
 }
