@@ -19,8 +19,9 @@ public void Interact()
         // If item needed to unlock the box is same as the selected item
             if(inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite.name == UnlockItem){
             
+            // When an object interacts with another gameobject it is supposed to, change item sprite back to empty_item
             // TODO! Add a preferred action here that happens when the safety box is opened!
-            
+            inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory Items/empty_item");
             Debug.Log("Unlocked");
         }
         }
