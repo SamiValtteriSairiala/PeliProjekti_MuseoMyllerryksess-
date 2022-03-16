@@ -14,7 +14,8 @@ public class UnlockSafetyBox : MonoBehaviour, IInteractable
     }
 public void Interact()
     {
-        if(inventory.GetComponent<Inventory>().currentSelectedSlot != null){
+        // First check that the item has usable property and the selected slot is not null
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot != null && inventory.GetComponent<Inventory>().currentSelectedSlot.GetComponent<Slot>().ItemProperty == Slot.property.usable){
         // If item needed to unlock the box is same as the selected item
             if(inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite.name == UnlockItem){
             
