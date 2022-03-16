@@ -8,6 +8,9 @@ public class PickUpItem : MonoBehaviour, IInteractable
 {
     public string DisplaySprite;
 
+    public enum property { usable, displayable};
+    [SerializeField]
+    private property itemProperty;
     private GameObject InventorySlots;
 
     public void Interact()
@@ -18,8 +21,9 @@ public class PickUpItem : MonoBehaviour, IInteractable
     private void ItemPickUp()
     {
         foreach(Transform slot in InventorySlots.transform){
-            if(slot.transform.GetChild(0).GetComponent<Image>().sprite.name == "empty_item"){
+            if (slot.transform.GetChild(0).GetComponent<Image>().sprite.name == "empty_item"){
                 slot.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory Items/" + DisplaySprite);
+                slot.GetComponent<Slot>().AssignProperty((int)itemProperty);
                 Destroy(gameObject);
                 break;
             }
