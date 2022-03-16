@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+// To determine what is the current selected slot
 public class Slot : MonoBehaviour, IPointerDownHandler
 {
     private GameObject inventory;
