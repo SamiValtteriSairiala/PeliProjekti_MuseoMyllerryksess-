@@ -41,7 +41,7 @@ public class WireScript : MonoBehaviour
                     if (EP_hit.collider != null)
                     {   
                         if(isCorrectPlaced == true){
-                            Debug.Log("Is correct");
+                            Debug.Log("Is correct");    
                         }
                         if(isRotating == false){
                             Rotate(EP_hit);
