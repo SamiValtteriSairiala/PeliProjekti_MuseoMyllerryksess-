@@ -28,7 +28,10 @@ namespace ObjectScripts{
                 // TODO! Add a preferred action here that happens when the safety box is opened!
                 inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory Items/empty_item");
                 Debug.Log("Unlocked");
+                
+                Destroy(GameObject.Find("safetyBox_door"));
                 Destroy(gameObject);
+                inventory.GetComponent<Inventory>().currentSelectedSlot = null;
             }
             }
         }
