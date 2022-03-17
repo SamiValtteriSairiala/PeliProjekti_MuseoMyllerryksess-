@@ -18,13 +18,14 @@ namespace ObjectScripts{
         private void ItemExamine()
         {   
             itemExaminer.SetActive(true);
-            itemExaminer.GetComponent<Image>().sprite = Resources.Load<Sprite>("Examinable Items/" + ExaminerImage); 
+            itemExaminer.GetComponent<Image>().sprite = Resources.Load<Sprite>("Examinable Items/" + ExaminerImage);
         }
 
         // Start is called before the first frame update
         void Start()
         {
             itemExaminer.SetActive(false);
+            
         }
     }
 }
