@@ -38,5 +38,6 @@ public class Timer : MonoBehaviour, IInteractable
     public void Interact()
     {
         StartTimer();
+        
     }
 }
