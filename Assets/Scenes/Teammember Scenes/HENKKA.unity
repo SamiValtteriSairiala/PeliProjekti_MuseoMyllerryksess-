@@ -407,7 +407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -120.185, y: -25.663727}
+  m_AnchoredPosition: {x: -214, y: 50}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614049456
@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa26d75d5ab66904bb744a5b1c0d24f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UnlockItem: avain
+  UnlockItem: avain_0
 --- !u!61 &1614049457
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1310,7 +1310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4311786770035961892, guid: 805e9000597c2ee44967d1649f9f126f, type: 3}
       propertyPath: DisplaySprite
-      value: avain_inventory
+      value: avain_0
       objectReference: {fileID: 0}
     - target: {fileID: 6418012184780176392, guid: 805e9000597c2ee44967d1649f9f126f, type: 3}
       propertyPath: m_Pivot.x
