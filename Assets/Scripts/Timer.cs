@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    //henkka on poika
     public float timer = 0;
     public float minutes = 0;
     public Text TimerText;
