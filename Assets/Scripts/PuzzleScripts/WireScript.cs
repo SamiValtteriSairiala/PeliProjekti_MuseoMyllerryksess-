@@ -10,6 +10,7 @@ public class WireScript : MonoBehaviour
     private bool isRotating = false;
     public float correctRotation;
     private bool isCorrectPlaced = false;
+    private float LockRotation;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +19,7 @@ public class WireScript : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
         if(transform.eulerAngles.z == correctRotation){
             isCorrectPlaced = true;
+            
         }
        
     }
@@ -38,14 +40,19 @@ public class WireScript : MonoBehaviour
                     
                     if (EP_hit.collider != null)
                     {   
+                        if(isCorrectPlaced == true){
+                            Debug.Log("Is correct");    
+                        }
                         if(isRotating == false){
                             Rotate(EP_hit);
                         }
+                        
                         // add some values to x, y, z
                         
                     }
                 }
             }
+            
 
     }
      void Rotate(RaycastHit2D Hit){

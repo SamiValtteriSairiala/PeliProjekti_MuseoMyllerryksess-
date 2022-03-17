@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using InventoryScripts;
 
 
-public class Timer : MonoBehaviour
+public class Timer : MonoBehaviour, IInteractable
 {
     //henkka on poika
     public float timer = 0;
     public float minutes = 0;
     public Text TimerText;
-    public bool TimerPaused = false;
+    public bool TimerPaused = true;
     // Start is called before the first frame update
     void Start()
     {
-        
+        TimerPaused = true;
     }
 
     // Update is called once per frame
@@ -29,5 +30,13 @@ public class Timer : MonoBehaviour
         }
         TimerText.text = minutes.ToString("00") + ":" + timer.ToString("00");
         
+    }
+    private void StartTimer(){
+        TimerPaused = false;
+    }
+
+    public void Interact()
+    {
+        StartTimer();
     }
 }

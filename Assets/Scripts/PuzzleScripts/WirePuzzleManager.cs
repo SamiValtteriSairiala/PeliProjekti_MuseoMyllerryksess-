@@ -8,7 +8,7 @@ public class WirePuzzleManager : MonoBehaviour
     public GameObject[] Wires;
     public int totalWires = 0;
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
         totalWires = WiresHolder.transform.childCount;
         Wires = new GameObject[totalWires];
