@@ -4,21 +4,24 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 // To determine what is the current selected slot
-public class Slot : MonoBehaviour, IPointerDownHandler
-{
-    private GameObject inventory;
 
-    public enum property{ usable, displayable};
-    public property ItemProperty{ get; private set;}
-    void Start(){
-        inventory = GameObject.Find("Inventory");
-    }
-    public void OnPointerDown(PointerEventData eventData)
+namespace InventoryScripts{
+    public class Slot : MonoBehaviour, IPointerDownHandler
     {
-        inventory.GetComponent<Inventory>().previousSelectedSlot = inventory.GetComponent<Inventory>().currentSelectedSlot;
-        inventory.GetComponent<Inventory>().currentSelectedSlot = this.gameObject;
-    }
-    public void AssignProperty(int orderNumber){
-        ItemProperty = (property)orderNumber;
+        private GameObject inventory;
+
+        public enum property{ usable, displayable};
+        public property ItemProperty{ get; private set;}
+        void Start(){
+            inventory = GameObject.Find("Inventory");
+        }
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            inventory.GetComponent<Inventory>().previousSelectedSlot = inventory.GetComponent<Inventory>().currentSelectedSlot;
+            inventory.GetComponent<Inventory>().currentSelectedSlot = this.gameObject;
+        }
+        public void AssignProperty(int orderNumber){
+            ItemProperty = (property)orderNumber;
+        }
     }
 }

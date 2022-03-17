@@ -1,3 +1,11 @@
+/*
+
+
+not used at the moment
+
+
+
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,4 +17,4 @@ public GameObject DisplayObject;
 public void Interact(){
     DisplayObject.SetActive(true);
 }
-}
+}*/

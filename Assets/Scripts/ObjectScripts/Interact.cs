@@ -4,16 +4,18 @@ using UnityEngine;
 using UnityEngine.U2D;
 using UnityEngine.EventSystems;
 
-public class Interact : MonoBehaviour, IPointerDownHandler
-{
-    // Use when user clicks/touches an interactable object
-    public void OnPointerDown(PointerEventData eventData)
+namespace ObjectScripts{
+    public class Interact : MonoBehaviour, IPointerDownHandler
     {
-        if(transform.tag == "Interactable"){
-                transform.GetComponent<IInteractable>().Interact();
+        // Use when user clicks/touches an interactable object
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            if(transform.tag == "Interactable"){
+                    transform.GetComponent<IInteractable>().Interact();
 
-                // Message to console on a confirmed hit
-                Debug.Log("hit");
+                    // Message to console on a confirmed hit
+                    Debug.Log("hit");
+            }
         }
     }
 }
