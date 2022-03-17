@@ -206,6 +206,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &358995492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3935738390887547857, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+  m_PrefabInstance: {fileID: 3935738391600120109}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &358995497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358995492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bc70f3d02cd3cd418aa2088f0146fc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemExaminer: {fileID: 704022699}
+  ExaminerImage: note
+--- !u!1 &704022699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3100678483845894328, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+  m_PrefabInstance: {fileID: 3935738391600120109}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &969603253
 GameObject:
   m_ObjectHideFlags: 0
@@ -808,6 +832,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3935738389778703693, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -795
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935738389778703693, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -507
+      objectReference: {fileID: 0}
     - target: {fileID: 3935738389895557729, guid: 14634964228c05842a458ba6814e5d61, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -895,6 +927,10 @@ PrefabInstance:
     - target: {fileID: 3935738389895557733, guid: 14634964228c05842a458ba6814e5d61, type: 3}
       propertyPath: m_Name
       value: SafetyBoxObjectsAndProps
+      objectReference: {fileID: 0}
+    - target: {fileID: 3935738390887547857, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+      propertyPath: m_TagString
+      value: Interactable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14634964228c05842a458ba6814e5d61, type: 3}
