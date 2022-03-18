@@ -890,7 +890,7 @@ GameObject:
   - component: {fileID: 331725258}
   - component: {fileID: 331725257}
   m_Layer: 5
-  m_Name: Timer
+  m_Name: TimerText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1332,7 +1332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &632068631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2804,6 +2804,7 @@ MonoBehaviour:
   minutes: 0
   TimerText: {fileID: 331725257}
   TimerPaused: 1
+  TimerCanvas: {fileID: 632068630}
 --- !u!1 &1247240573
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,8 @@ public class Timer : MonoBehaviour
     public float minutes = 0;
     public Text TimerText;
     public bool TimerPaused = true;
+
+    [SerializeField] GameObject TimerCanvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +34,9 @@ public class Timer : MonoBehaviour
         
     }
     public void StartTimer(){
+        TimerCanvas.SetActive(true);
         TimerPaused = false;
+        
     }
 
     
