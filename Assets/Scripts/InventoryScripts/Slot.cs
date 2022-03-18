@@ -10,7 +10,7 @@ namespace InventoryScripts{
     {
         private GameObject inventory;
 
-        public enum property{ usable, displayable, empty};
+        public enum property{ usable, reUsable, empty};
         public property ItemProperty{ get; set;}
         void Start(){
             inventory = GameObject.Find("Inventory");

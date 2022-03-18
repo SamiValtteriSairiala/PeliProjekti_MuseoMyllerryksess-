@@ -17,7 +17,7 @@ namespace InventoryScripts{
         public string DisplayItem;
 
         // Use displayable only for viewing objects, usable for items with functions with other gameobjects
-        public enum property { usable, displayable};
+        public enum property { usable, reUsable, empty};
         
         private GameObject InventorySlots;
 

@@ -43,7 +43,7 @@ namespace InventoryScripts{
                     previousSelectedSlot = null;
                 }
                 // When a slot is selected and the object in it is usable, change the color to inform the user what object is currently selected
-                else if(slot.gameObject == currentSelectedSlot && slot.GetComponent<Slot>().ItemProperty == Slot.property.usable) {
+                else if(slot.gameObject == currentSelectedSlot && (slot.GetComponent<Slot>().ItemProperty == Slot.property.usable || slot.GetComponent<Slot>().ItemProperty == Slot.property.reUsable)) {
                     slot.GetComponent<Image>().color = new Color(.9f, .4f, .6f, 1);
                 }
                 // When object is used, nullify the current and previous slots to deselect the slot (otherwise it selects the slot automatically when an object is picked up)
