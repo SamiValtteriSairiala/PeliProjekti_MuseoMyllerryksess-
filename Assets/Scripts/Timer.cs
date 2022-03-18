@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using InventoryScripts;
 
 
-public class Timer : MonoBehaviour, IInteractable
+
+public class Timer : MonoBehaviour
 {
     //henkka on poika
     public float timer = 0;
@@ -31,13 +31,9 @@ public class Timer : MonoBehaviour, IInteractable
         TimerText.text = minutes.ToString("00") + ":" + timer.ToString("00");
         
     }
-    private void StartTimer(){
+    public void StartTimer(){
         TimerPaused = false;
     }
 
-    public void Interact()
-    {
-        StartTimer();
-        
-    }
+    
 }
