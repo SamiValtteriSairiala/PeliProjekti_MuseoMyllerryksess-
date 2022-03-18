@@ -8,6 +8,7 @@ public class LobbyMove : MonoBehaviour
     [SerializeField] private GameObject CloakRoom;
     [SerializeField] private GameObject SecondFloor;
     [SerializeField] private GameObject WirePuzzle;
+    [SerializeField] private GameObject ElectricBox;
    
     // Start is called before the first frame update
     private GameObject GameManager;
@@ -33,9 +34,11 @@ public class LobbyMove : MonoBehaviour
     }
 
     public void OpenWirePuzzle(){
+        ElectricBox.SetActive(true);
         LobbyScreen.SetActive(false);
-        WirePuzzle.SetActive(true);
         
     }
+
+    
 
 }
