@@ -5,6 +5,8 @@ using InventoryScripts;
 using System;
 
 namespace ObjectScripts{
+
+    // Use for hints etc., sets the gameobject deactive when it's clicked
     public class CloseOnClick : MonoBehaviour, IInteractable
     {
 
@@ -17,10 +19,5 @@ namespace ObjectScripts{
         {
             gameObject.SetActive(false);
         }
-
-        void Start(){
-            
-        }
-
     }
 }

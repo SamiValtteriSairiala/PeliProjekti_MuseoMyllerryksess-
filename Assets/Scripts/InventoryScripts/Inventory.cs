@@ -30,7 +30,7 @@ namespace InventoryScripts{
         }
 
 
-        // TODO! Could change the color to more appropriate one after inventory UI is ready!
+        // TODO! Could change the color to more appropriate one after inventory UI is ready! Now it's just random number to show red
         
         // Shows user what slot is currently selected and deselects slots in certain cases
         // Call from update

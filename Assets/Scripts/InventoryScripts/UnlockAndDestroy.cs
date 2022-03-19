@@ -36,15 +36,17 @@ namespace ObjectScripts{
                     Debug.Log("Unlocked");
                     
                     Destroy(toDestroy);
-                    //Destroy(gameObject);
+                    // Destroy(gameObject);
                 }
             }
-            // If object is reUsable, don't rewrite the slot sprite before every interractable has been nullified
+            // If object is reUsable, don't rewrite the slot sprite before every interractable has been nullified (currently up to 4 interractable objects)
+            // TODO! Could this be done with object property enum to attach infinite number of objects to a certain reusable item???
+                    // NoteToSelf! This game has only few objects a certain item has to interract with so there's not a specific need for this, but the above method would be more useful in future, especially in larger scale
             else if (inventory.GetComponent<Inventory>().currentSelectedSlot != null && inventory.GetComponent<Inventory>().currentSelectedSlot.GetComponent<Slot>().ItemProperty == Slot.property.reUsable){
                 if(inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite.name == UnlockItem){
                     
 
-                    // Check that every object is nullified before changing the sprite
+                    // Check that every object is nullified before changing the sprite in inventory
                     if((interractableObject1 == null && interractableObject2 == null && interractableObject3 == null) || (interractableObject1 == null && interractableObject2 == null && interractableObject4 == null) ||
                        (interractableObject1 == null && interractableObject3 == null && interractableObject4 == null) || (interractableObject2 == null && interractableObject3 == null && interractableObject4 == null)){
                         
@@ -52,6 +54,7 @@ namespace ObjectScripts{
                         inventory.GetComponent<Inventory>().currentSelectedSlot.GetComponent<Slot>().ItemProperty = Slot.property.empty;
                         inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory Items/empty_item");
                     }
+                    // Destroy the object that is attached if interracted with the appropriate item in inventory
                     Debug.Log("Unlocked");
                     Destroy(toDestroy);
                 }

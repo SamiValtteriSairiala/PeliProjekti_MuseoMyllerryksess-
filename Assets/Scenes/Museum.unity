@@ -456,7 +456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5681151298994756999, guid: 9d5cee22cf2f19f4ea6323f48577fd86, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5681151298998105192, guid: 9d5cee22cf2f19f4ea6323f48577fd86, type: 3}
       propertyPath: m_LocalScale.x
@@ -2206,7 +2206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &839701969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3033,7 +3033,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1280921779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3887,6 +3887,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1691268281}
   m_CullTransparentMesh: 1
+--- !u!1 &1732647650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3935738389671763016, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+  m_PrefabInstance: {fileID: 2033460511}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1789038468
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4154,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Interactable
       objectReference: {fileID: 0}
+    - target: {fileID: 3935738391502766625, guid: 14634964228c05842a458ba6814e5d61, type: 3}
+      propertyPath: toDestroy
+      value: 
+      objectReference: {fileID: 1732647650}
     m_RemovedComponents:
     - {fileID: 3935738390091963932, guid: 14634964228c05842a458ba6814e5d61, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14634964228c05842a458ba6814e5d61, type: 3}

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-// To determine what is the current selected slot
+// To determine what is the current and previously selected slots
+// Click to select a slot
 
 namespace InventoryScripts{
     public class Slot : MonoBehaviour, IPointerDownHandler

@@ -13,15 +13,11 @@ namespace InventoryScripts{
         // Keeps track of what sprite will be shown in inventory when picking up an object
         public string DisplaySprite;
 
-        // Use for hints etc. (items that are only viewable
-        public string DisplayItem;
-
-        // Use displayable only for viewing objects, usable for items with functions with other gameobjects
+        // Use reUsable for items that need to be used again, usable for items with functions with other gameobjects, empty if there is no use (possibly only with "empty_item"-sprite)
         public enum property { usable, reUsable, empty};
         
         private GameObject InventorySlots;
 
-        // If the object is interractable, try to pick it up using ItemPickUp- method
         public void Interact()
         {
             ItemPickUp();
