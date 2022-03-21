@@ -8,6 +8,7 @@ public class WirePuzzleManager : MonoBehaviour
     public GameObject[] Wires;
     public int totalWires = 0;
     private int CorrectlyWires = 0;
+    [SerializeField] RoomsManager RoomManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +20,19 @@ public class WirePuzzleManager : MonoBehaviour
         }
     }
 
-    public void CorrectMove(){
+    public void CorrectMove()
+    {
         CorrectlyWires += 1;
 
-        if(CorrectlyWires == totalWires){
+        if (CorrectlyWires == totalWires)
+        {
+            RoomManager.WirePuzzleComplete();
             // Do something.
             // This is win condition.
         }
     }
-    public void WrongMove(){
+    public void WrongMove()
+    {
         CorrectlyWires -= 1;
     }
 }
