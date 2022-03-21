@@ -1745,11 +1745,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1476103448718824512, guid: a05b7e099713f8e46b85a81d5d23e0e3, type: 3}
       propertyPath: m_CellSize.x
-      value: 160
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1476103448718824512, guid: a05b7e099713f8e46b85a81d5d23e0e3, type: 3}
       propertyPath: m_CellSize.y
-      value: 121.71429
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1476103448718824512, guid: a05b7e099713f8e46b85a81d5d23e0e3, type: 3}
       propertyPath: m_Padding.m_Top
