@@ -14,7 +14,8 @@ public class WireScript : MonoBehaviour
     private float LockRotation;
     public WirePuzzleManager Manager;
     // Start is called before the first frame update
-    void Awake(){
+    void Awake()
+    {
         Manager = GameObject.Find("WireManager").GetComponent<WirePuzzleManager>();
     }
     void Start()
@@ -47,24 +48,25 @@ public class WireScript : MonoBehaviour
 
 
 
-    
+
 
     // Update is called once per frame
     void Update()
     {
-        
-        
+
+
 
 
     }
 
-  
-    private void OnMouseDown(){
+
+    private void OnMouseDown()
+    {
         // isRotating = true;
         transform.Rotate(new Vector3(0, 0, 90f));
         if (PossibleRots > 1)
         {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isCorrectPlaced == false)
+            if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false || transform.eulerAngles.z == correctRotation[1] && isCorrectPlaced == false)
             {
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
@@ -75,7 +77,8 @@ public class WireScript : MonoBehaviour
                 Manager.WrongMove();
             }
         }
-        else{
+        else
+        {
             if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false)
             {
                 isCorrectPlaced = true;
@@ -118,7 +121,7 @@ public class WireScript : MonoBehaviour
     //         }
     //     }
     //     Invoke("StopRotating", 1f);
-        
+
     // }
 
     // void StopRotating()
