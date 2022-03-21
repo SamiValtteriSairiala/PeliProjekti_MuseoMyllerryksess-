@@ -24,7 +24,7 @@ public class WirePuzzleManager : MonoBehaviour
     {
         CorrectlyWires += 1;
 
-        if (CorrectlyWires == totalWires)
+        if (CorrectlyWires == totalWires - 1)
         {
             Debug.Log("Won");
             RoomManager.WirePuzzleComplete();
