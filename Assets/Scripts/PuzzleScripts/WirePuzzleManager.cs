@@ -7,6 +7,7 @@ public class WirePuzzleManager : MonoBehaviour
     public GameObject WiresHolder;
     public GameObject[] Wires;
     public int totalWires = 0;
+    private int CorrectlyWires = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,9 +19,15 @@ public class WirePuzzleManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    public void CorrectMove(){
+        CorrectlyWires += 1;
 
+        if(CorrectlyWires == totalWires){
+            // Do something.
+            // This is win condition.
+        }
+    }
+    public void WrongMove(){
+        CorrectlyWires -= 1;
     }
 }
