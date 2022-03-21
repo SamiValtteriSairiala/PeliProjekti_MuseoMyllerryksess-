@@ -10,6 +10,7 @@ namespace ObjectScripts{
     public class DeActivateOnClick : MonoBehaviour, IInteractable
     {
         [SerializeField] private GameObject toDeactivate;
+        [SerializeField] private GameObject toActivate;
         [SerializeField] private GameObject object1;
         [SerializeField] private GameObject object2;
         [SerializeField] private GameObject object3;
@@ -34,6 +35,7 @@ namespace ObjectScripts{
                     Debug.Log("unlocked" + gameObject);
                     // gameObject.SetActive(false);
                     toDeactivate.SetActive(false);
+                    toActivate.SetActive(true);
                 
             }
         }
