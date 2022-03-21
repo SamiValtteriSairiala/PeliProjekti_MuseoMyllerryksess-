@@ -550,7 +550,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917718222652493250, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.data[1]
-      value: -180
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4917718222924078470, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.size
@@ -570,7 +570,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917718222929417312, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.data[1]
-      value: -90
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917718222957153215, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4917718222957153215, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
+      propertyPath: isCorrectPlaced
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4917718222957153215, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.size
@@ -590,7 +598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917718223257883229, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.data[1]
-      value: -180
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4917718223312308829, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.size
@@ -610,7 +618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917718223435164122, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.data[1]
-      value: -180
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4917718223878927445, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.size
@@ -674,7 +682,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917718224367440663, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.data[1]
-      value: -90
+      value: 270
       objectReference: {fileID: 0}
     - target: {fileID: 4917718224394556317, guid: 66d632abec0c78e4286503da6d3a2d33, type: 3}
       propertyPath: correctRotation.Array.size
