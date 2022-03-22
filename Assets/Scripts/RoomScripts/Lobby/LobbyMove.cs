@@ -31,6 +31,7 @@ public class LobbyMove : MonoBehaviour
         LobbyScreen.SetActive(false);
         BlackScreenScript.BlackenScreen();
         CloakRoom.SetActive(true);
+        Debug.Log("Switching scene");
     }
 
     public void OpenWirePuzzle(){
