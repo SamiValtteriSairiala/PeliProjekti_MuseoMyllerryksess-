@@ -10,9 +10,9 @@ public class WirePuzzleManager : MonoBehaviour
     public int CorrectlyWires = 0;
     [SerializeField] RoomsManager RoomManager;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        totalWires = WiresHolder.transform.childCount;
+        totalWires = WiresHolder.transform.childCount - 1;
         Wires = new GameObject[totalWires];
         for (int i = 0; i < Wires.Length; i++)
         {

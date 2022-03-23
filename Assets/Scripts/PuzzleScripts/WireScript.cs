@@ -22,7 +22,7 @@ public class WireScript : MonoBehaviour
         {
             if (Mathf.Approximately(transform.eulerAngles.z, correctRotation[0]) || Mathf.Approximately(transform.eulerAngles.z, correctRotation[1]))
             {
-                Debug.Log("Start Correct");
+                Debug.Log(gameObject + "Start Correct");
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
             }
@@ -40,7 +40,7 @@ public class WireScript : MonoBehaviour
         {
             if (Mathf.Approximately(transform.eulerAngles.z, correctRotation[0]))
             {
-                Debug.Log("L piece start correct");
+                Debug.Log(gameObject + "L piece start correct");
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
             }
@@ -82,6 +82,7 @@ public class WireScript : MonoBehaviour
             {
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
+                Debug.Log(gameObject + " is correct");
             }
             else if (isCorrectPlaced == true)
             {
@@ -96,6 +97,7 @@ public class WireScript : MonoBehaviour
             {
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
+                Debug.Log(gameObject + " is  correct");
             }
             else if (isCorrectPlaced == true)
             {
