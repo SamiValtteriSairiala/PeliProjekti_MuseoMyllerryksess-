@@ -9,37 +9,53 @@ public class LobbyMove : MonoBehaviour
     [SerializeField] private GameObject SecondFloor;
     [SerializeField] private GameObject WirePuzzle;
     [SerializeField] private GameObject ElectricBox;
-   
+
     // Start is called before the first frame update
     private GameObject GameManager;
     private BlackScreen BlackScreenScript;
 
+    private Timer TimerScript;
     // Start is called before the first frame update
     void Start()
     {
         GameManager = GameObject.Find("GameManager");
         BlackScreenScript = GameManager.GetComponent<BlackScreen>();
+        TimerScript = GameManager.GetComponent<Timer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void MoveRight(){
+    public void MoveRight()
+    {
         LobbyScreen.SetActive(false);
         BlackScreenScript.BlackenScreen();
         CloakRoom.SetActive(true);
         Debug.Log("Switching scene");
     }
 
-    public void OpenWirePuzzle(){
-        ElectricBox.SetActive(true);
-        LobbyScreen.SetActive(false);
-        
+    public void MoveUp()
+    {
+        // Only able to go to upstairs after timer starts.
+        if (TimerScript.TimerPaused == false)
+        {
+            LobbyScreen.SetActive(false);
+            BlackScreenScript.BlackenScreen();
+            SecondFloor.SetActive(true);
+        }
+
     }
 
-    
+    public void OpenWirePuzzle()
+    {
+        ElectricBox.SetActive(true);
+        LobbyScreen.SetActive(false);
+
+    }
+
+
 
 }
