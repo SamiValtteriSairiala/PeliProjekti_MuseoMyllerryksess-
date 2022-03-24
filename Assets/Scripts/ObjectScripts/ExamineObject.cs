@@ -15,10 +15,10 @@ namespace ObjectScripts{
         public string ExaminerImage;
         public void Interact()
         {
-            ItemExamine();
+            OnMouseDown();
         }
 
-        private void ItemExamine()
+        private void OnMouseDown()
         {   
             itemExaminer.SetActive(true);
             itemExaminer.GetComponent<Image>().sprite = Resources.Load<Sprite>("Examinable Items/" + ExaminerImage);

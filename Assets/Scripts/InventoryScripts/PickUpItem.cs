@@ -20,12 +20,12 @@ namespace InventoryScripts{
 
         public void Interact()
         {
-            ItemPickUp();
+            OnmouseDown();
         }
 
         // If inventory has empty_item -sprite, fill the first slot available with the sprite of the picked up object
         // Destroy the game object afterwards
-        private void ItemPickUp()
+        private void OnmouseDown()
         {
             foreach(Transform slot in InventorySlots.transform){
                 if (slot.transform.GetChild(0).GetComponent<Image>().sprite.name == "empty_item"){

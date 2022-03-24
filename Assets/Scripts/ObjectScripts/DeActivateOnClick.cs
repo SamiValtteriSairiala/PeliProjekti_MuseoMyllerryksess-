@@ -4,6 +4,7 @@ using UnityEngine;
 using InventoryScripts;
 using System;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
 namespace ObjectScripts{
 
@@ -23,21 +24,22 @@ namespace ObjectScripts{
         }
         public void Interact()
         {
-            DeActivateWhenReady();
+            OnMouseDown();
         }
 
         // Deactivates gameObject this script is attached, if every object mentioned in the script is nullified
-        private void DeActivateWhenReady()
+        void OnMouseDown()
         {
-            // Check if every object needed to open a box is interracted with and the current slot in inventory is null to continue
-            if(object1 == null && object2 == null && object3 == null && object4 == null && inventory.GetComponent<Inventory>().currentSelectedSlot == null){
-                
-                    Debug.Log("unlocked" + gameObject);
-                    // gameObject.SetActive(false);
-                    toDeactivate.SetActive(false);
-                    toActivate.SetActive(true);
-                
-            }
+                // Check if every object needed to open a box is interracted with and the current slot in inventory is null to continue
+                if(object1 == null && object2 == null && object3 == null && object4 == null && inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+                    
+                        Debug.Log("unlocked" + gameObject);
+                        // gameObject.SetActive(false);
+                        toDeactivate.SetActive(false);
+                        toActivate.SetActive(true);
+                    
+                }
+            
         }
     }
 }
