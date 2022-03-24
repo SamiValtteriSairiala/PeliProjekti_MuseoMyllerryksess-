@@ -37,7 +37,13 @@ public class RoomsManager : MonoBehaviour
         Destroy(Shadow);
         Debug.Log("Shadow destroyed");
         CanGoDown = true;
+        Invoke("DeactivateWirePuzzle", 5f);
 
+    }
+
+    void DeactivateWirePuzzle(){
+        WirePuzzle.SetActive(false);
+        LobbyScreen.SetActive(true);
     }
     public void MoveToDownstairs()
     {
