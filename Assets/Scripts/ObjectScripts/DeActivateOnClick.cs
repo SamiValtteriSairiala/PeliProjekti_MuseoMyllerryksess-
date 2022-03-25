@@ -8,6 +8,7 @@ using UnityEngine.EventSystems;
 
 namespace ObjectScripts{
 
+// Deactivates gameObject this script is attached to, if every object mentioned in the script is nullified
     public class DeActivateOnClick : MonoBehaviour, IInteractable
     {
         [SerializeField] private GameObject toDeactivate;
@@ -26,8 +27,7 @@ namespace ObjectScripts{
         {
             OnMouseDown();
         }
-
-        // Deactivates gameObject this script is attached, if every object mentioned in the script is nullified
+        
         void OnMouseDown()
         {
                 // Check if every object needed to open a box is interracted with and the current slot in inventory is null to continue

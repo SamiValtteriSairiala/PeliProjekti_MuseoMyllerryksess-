@@ -5,12 +5,14 @@ using InventoryScripts;
 using UnityEngine.UI;
 using System;
 
+// Deactivates the object that is attached to if interracted with the appropriate item from inventory and activates another object 
 public class DeactivateAndExamine : MonoBehaviour, IInteractable
 {
         public string UnlockItem;
         public GameObject currentSelectedSlot {get; set; }
         public GameObject previousSelectedSlot {get; set; }
 
+        // Choose what game objects need to be (de)activated
         [SerializeField] private GameObject toDeactivate;
         [SerializeField] private GameObject toActivate;
 
@@ -30,7 +32,7 @@ public class DeactivateAndExamine : MonoBehaviour, IInteractable
         if (inventory.GetComponent<Inventory>().currentSelectedSlot != null && inventory.GetComponent<Inventory>().currentSelectedSlot.GetComponent<Slot>().ItemProperty == Slot.property.reUsable){
                 if(inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite.name == UnlockItem){
                     
-                    // Deactivate the object that is attached if interracted with the appropriate item in inventory
+
                     Debug.Log("Unlocked");
                     toDeactivate.SetActive(false);
                     toActivate.SetActive(true);
