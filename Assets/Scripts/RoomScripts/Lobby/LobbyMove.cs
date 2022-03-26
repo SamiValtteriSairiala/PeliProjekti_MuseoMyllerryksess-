@@ -51,9 +51,17 @@ public class LobbyMove : MonoBehaviour
 
     public void OpenWirePuzzle()
     {
-        ElectricBox.SetActive(true);
-        LobbyScreen.SetActive(false);
-
+        if (TimerScript.TimerPaused == false)
+        {
+            ElectricBox.SetActive(true);
+            LobbyScreen.SetActive(false);
+        }
+    }
+    public void BackToLobby()
+    {
+        ElectricBox.SetActive(false);
+        BlackScreenScript.BlackenScreen();
+        LobbyScreen.SetActive(true);
     }
 
 
