@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class PathPuzzle : MonoBehaviour
 {
-
+    
     [SerializeField] private GameObject StartPiece;
     public bool restart = false;
     public float speed;
     private Vector2 targetPosition;
+    
     // Start is called before the first frame update
     void Start()
     {
         targetPosition = new Vector2(transform.position.x, transform.position.y);
+        
     }
 
     // Update is called once per frame
@@ -31,9 +33,13 @@ public class PathPuzzle : MonoBehaviour
         //Resets player to start piece.
         if (restart == true)
         {
+            
             targetPosition = new Vector2(StartPiece.transform.position.x, StartPiece.transform.position.y);
             gameObject.transform.position = StartPiece.transform.position;
             restart = false;
+            
         }
+        
     }
+    
 }

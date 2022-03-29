@@ -6,11 +6,13 @@ public class GoalPath : MonoBehaviour
 {
     private SpriteRenderer spriteRenderer;
     public Sprite newSprite;
+    public Sprite currentSprite;
     private GameObject PathPuzzle;
     // Start is called before the first frame update
     void Start()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        currentSprite = spriteRenderer.sprite;
     }
 
     void OnTriggerEnter2D(Collider2D col)
