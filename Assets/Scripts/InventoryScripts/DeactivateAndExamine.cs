@@ -14,6 +14,8 @@ public class DeactivateAndExamine : MonoBehaviour, IInteractable
 
         // Choose what game objects need to be (de)activated
         [SerializeField] private GameObject toDeactivate;
+        [SerializeField] private GameObject toActivate2;
+    
         [SerializeField] private GameObject toActivate;
 
 
@@ -35,6 +37,7 @@ public class DeactivateAndExamine : MonoBehaviour, IInteractable
 
                     Debug.Log("Unlocked");
                     toDeactivate.SetActive(false);
+                    toActivate2.SetActive(true);
                     toActivate.SetActive(true);
                     inventory.GetComponent<Inventory>().currentSelectedSlot = null;
                     inventory.GetComponent<Inventory>().previousSelectedSlot = null;
