@@ -5,6 +5,7 @@ using InventoryScripts;
 using System;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using PuzzleScript;
 
 namespace ObjectScripts{
 
@@ -13,12 +14,14 @@ namespace ObjectScripts{
     {
         [SerializeField] private GameObject toDeactivate;
         [SerializeField] private GameObject toActivate;
+
         [SerializeField] private GameObject object1;
         [SerializeField] private GameObject object2;
         [SerializeField] private GameObject object3;
         [SerializeField] private GameObject object4;
 
         private GameObject inventory;
+        
 
         void Start(){
             inventory = GameObject.Find("Inventory");

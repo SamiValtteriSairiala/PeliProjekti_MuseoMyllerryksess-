@@ -29,7 +29,7 @@ namespace PuzzleScript
                 if (hit)
                 {
                     Debug.Log(hit.transform.name);
-                    if (Vector2.Distance(emptySpace.position, hit.transform.position) < 4.7)
+                    if (Vector2.Distance(emptySpace.position, hit.transform.position) < 4.0)
                     {
                         Vector2 lastEmptySpacePos = emptySpace.position;
                         TileScript thisTile = hit.transform.GetComponent<TileScript>();
@@ -58,7 +58,7 @@ namespace PuzzleScript
             // Close puzzle and do something ???
             if (correctTiles == tiles.Length - 1)
             {
-
+                
             }
         }
         public void Shuffle()
