@@ -3880,7 +3880,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1209969406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3980,6 +3980,8 @@ MonoBehaviour:
   SFXisMuted: 0
   MusicMixer: {fileID: 24100000, guid: 01dbdb2d328760540b1b75fd185dcdfc, type: 2}
   SFXMixer: {fileID: 24100000, guid: c50b3316723b81b4496402c23ba08747, type: 2}
+  ToggleMusic: {fileID: 108535734}
+  ToggleSFX: {fileID: 1085653261}
 --- !u!1 &1247216812
 GameObject:
   m_ObjectHideFlags: 0
