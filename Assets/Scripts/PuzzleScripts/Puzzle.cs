@@ -56,7 +56,10 @@ namespace PuzzleScript
             }
             // Add victory condition.
             // Close puzzle and do something ???
-            // if (correctTiles == tiles.Length - 1);
+            if (correctTiles == tiles.Length - 1)
+            {
+                
+            }
         }
         public void Shuffle()
         {
