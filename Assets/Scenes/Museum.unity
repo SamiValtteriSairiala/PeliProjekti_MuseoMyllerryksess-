@@ -4362,6 +4362,8 @@ MonoBehaviour:
   - {fileID: 547336956}
   - {fileID: 386677251}
   - {fileID: 0}
+  Done: 0
+  EmptySpaceSprite: {fileID: 2107689535}
 --- !u!224 &1037424598 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3935738389895557729, guid: 14634964228c05842a458ba6814e5d61, type: 3}
@@ -8815,6 +8817,62 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
+--- !u!1 &2107689534 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7068876111722003269, guid: cd22e966752992c48a7530804ccbfeca, type: 3}
+  m_PrefabInstance: {fileID: 1702896565}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &2107689535
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107689534}
+  m_Enabled: 0
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: b6673b22bffc304498270ee9c119bb23, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.78, y: 1.27}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2127868253
 GameObject:
   m_ObjectHideFlags: 0

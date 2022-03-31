@@ -12,6 +12,9 @@ namespace PuzzleScript
         private Camera m_Camera;
         [SerializeField] private TileScript[] tiles;
         private int emptySpaceIndex = 15;
+        public bool Done = false;
+
+        [SerializeField] private SpriteRenderer EmptySpaceSprite;
 
 
         void Start()
@@ -58,7 +61,9 @@ namespace PuzzleScript
             // Close puzzle and do something ???
             if (correctTiles == tiles.Length - 1)
             {
-                
+                Done = true;
+                this.enabled = false;
+                EmptySpaceSprite.enabled = true;
             }
         }
         public void Shuffle()

@@ -6,6 +6,7 @@ using PuzzleScript;
 public class OpenTilePuzzle : MonoBehaviour
 {
     [SerializeField] private Puzzle PuzzleScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,8 +16,12 @@ public class OpenTilePuzzle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        PuzzleScript.enabled = true;
+        if (PuzzleScript.Done == false)
+        {
+            PuzzleScript.enabled = true;
+        }
+
     }
 
-    
+
 }
