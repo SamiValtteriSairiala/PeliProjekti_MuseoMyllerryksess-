@@ -4724,19 +4724,19 @@ PrefabInstance:
       objectReference: {fileID: 181410791}
     - target: {fileID: 4284326616144724643, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1013.3091
+      value: 908.15
       objectReference: {fileID: 0}
     - target: {fileID: 4284326616144724643, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 891.3318
+      value: 891.42
       objectReference: {fileID: 0}
     - target: {fileID: 4284326616144724643, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -237.76451
+      value: -242.92
       objectReference: {fileID: 0}
     - target: {fileID: 4284326616144724643, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 23.891905
+      value: 3.2102
       objectReference: {fileID: 0}
     - target: {fileID: 4284326616360977811, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_AnchorMax.x
@@ -4771,8 +4771,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4284326616360977821, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6673f79a51bf76142afc97e8237671a1, type: 3}
+    - target: {fileID: 4284326616360977821, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_Maskable
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326616477896544, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326616553264043, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326616553264043, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326616692807140, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -728
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326616692807140, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 445
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326617343561316, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 237.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284326617343561316, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -435
       objectReference: {fileID: 0}
     - target: {fileID: 4284326617380172824, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_Name
@@ -4780,7 +4812,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4284326617380172824, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4284326617380172828, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
       propertyPath: m_Pivot.x
@@ -5612,37 +5644,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51970f4b358fece46a46248eefebeb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1877796218 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4284326616144724652, guid: 175015f0664ab9746a42e14af8a23dcf, type: 3}
-  m_PrefabInstance: {fileID: 1508519819}
-  m_PrefabAsset: {fileID: 0}
---- !u!61 &1877796224
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1877796218}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1981545381
 GameObject:
   m_ObjectHideFlags: 0
