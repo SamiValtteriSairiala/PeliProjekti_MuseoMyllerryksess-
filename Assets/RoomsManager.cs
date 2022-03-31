@@ -37,7 +37,6 @@ public class RoomsManager : MonoBehaviour
         Destroy(Shadow);
         Debug.Log("Shadow destroyed");
         CanGoDown = true;
-        Invoke("DeactivateWirePuzzle", 5f);
 
     }
 
