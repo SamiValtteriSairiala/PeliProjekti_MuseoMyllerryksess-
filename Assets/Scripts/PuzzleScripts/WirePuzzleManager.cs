@@ -9,6 +9,8 @@ public class WirePuzzleManager : MonoBehaviour
     public int totalWires = 0;
     public int CorrectlyWires = 0;
     [SerializeField] RoomsManager RoomManager;
+    [SerializeField] private GameObject ReadyObject;
+    [SerializeField] private GameObject NotReadyObject;
     // Start is called before the first frame update
     void Awake()
     {
@@ -27,6 +29,8 @@ public class WirePuzzleManager : MonoBehaviour
         if (CorrectlyWires == totalWires)
         {
             Debug.Log("Won");
+            ReadyObject.SetActive(true);
+            NotReadyObject.SetActive(false);
             RoomManager.WirePuzzleComplete();
             // Do something.
             // This is win condition.
