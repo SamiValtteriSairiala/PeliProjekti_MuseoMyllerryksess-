@@ -8,6 +8,8 @@ public class GoalPath : MonoBehaviour
     public Sprite newSprite;
     public Sprite currentSprite;
     private GameObject PathPuzzle;
+
+    [SerializeField] private CheckpointPath checkPoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,15 +19,19 @@ public class GoalPath : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col)
     {
-        
-        // Change sprite.                      
-        ChangeSprite();
-        // Correct move.
-        //Add something here that happens when winning.
-        PathPuzzle.SetActive(false);
+        if (checkPoint.CheckPointReached == true)
+        {
+            // Change sprite.                      
+            ChangeSprite();
+            // Correct move.
+            //Add something here that happens when winning.
+            PathPuzzle.SetActive(false);
+        }
+
 
     }
-    void ChangeSprite(){
+    void ChangeSprite()
+    {
         spriteRenderer.sprite = newSprite;
     }
 }
