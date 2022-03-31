@@ -4349,14 +4349,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1279997959}
-  - component: {fileID: 1279997961}
-  - component: {fileID: 1279997960}
   - component: {fileID: 1279997963}
   - component: {fileID: 1279997964}
   - component: {fileID: 1279997962}
+  - component: {fileID: 1279997961}
+  - component: {fileID: 1279997960}
   m_Layer: 0
   m_Name: MoveArrow
-  m_TagString: Interactable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4384,27 +4384,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279997958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d31f71f3400d48a47a700addb47c68f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2de68989bbdce114fa62ce232c9f3c1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDeactivate: {fileID: 326217482}
-  toActivate: {fileID: 32041763}
-  object1: {fileID: 0}
-  object2: {fileID: 0}
-  object3: {fileID: 0}
-  object4: {fileID: 0}
---- !u!114 &1279997961
-MonoBehaviour:
+  Puzzle: {fileID: 1028374848}
+  tilepuzzle: {fileID: 326217482}
+  UpperFloor: {fileID: 1802317296}
+--- !u!61 &1279997961
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279997958}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f1c4cf5f081af4a8e47baf23bda4fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.63, y: 1.29}
+    newSize: {x: 1.63, y: 1.29}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.63, y: 1.29}
+  m_EdgeRadius: 0
 --- !u!212 &1279997962
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6889,7 +6900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d31f71f3400d48a47a700addb47c68f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toDeactivate: {fileID: 32041763}
+  toDeactivate: {fileID: 1802317296}
   toActivate: {fileID: 326217482}
   object1: {fileID: 0}
   object2: {fileID: 0}
