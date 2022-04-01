@@ -85,6 +85,7 @@ public class DigitalDisplay : MonoBehaviour
 
     private void DisplayCodeSequence(int digitJustEntered)
 	{
+        // This needs to be tested and fixed if it dosent work.
 		switch (codeSequence.Length)
 		{
             case 1:
@@ -110,6 +111,7 @@ public class DigitalDisplay : MonoBehaviour
         //Put correct code here.
         if(codeSequence == "147")
 		{
+            // Do something.
             Debug.Log("Correct!");
 		}
 		else
