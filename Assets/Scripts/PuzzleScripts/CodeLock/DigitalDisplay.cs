@@ -94,9 +94,9 @@ public class DigitalDisplay : MonoBehaviour
                 characters[2].sprite = digits[digitJustEntered];
                 break;
             case 2:
-                characters[0].sprite = digits[10];
-                characters[1].sprite = characters[2].sprite;
-                characters[2].sprite = digits[digitJustEntered];
+                //characters[0].sprite = digits[10];
+                characters[0].sprite = characters[1].sprite;
+                characters[1].sprite = digits[digitJustEntered];
                 break;
             case 3:
                 characters[0].sprite = characters[1].sprite;
@@ -109,7 +109,7 @@ public class DigitalDisplay : MonoBehaviour
     private void CheckResults()
 	{
         //Put correct code here.
-        if(codeSequence == "147")
+        if(codeSequence == "471")
 		{
             // Do something.
             Debug.Log("Correct!");
