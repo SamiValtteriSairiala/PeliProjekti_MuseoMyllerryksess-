@@ -1934,7 +1934,7 @@ Canvas:
   m_GameObject: {fileID: 484646986}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -2141,8 +2141,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 2b226d1a158982149ac1495f8f9ced2c, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2257,8 +2257,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 7adfaca2b49812b44b6391ea4f8a1269, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -4837,8 +4837,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 75d35f85f69d35544b1813ab0c9bbce3, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5982,16 +5982,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   digits:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 15b7b97990dea1c48abaf84aeeabe927, type: 3}
+  - {fileID: 21300000, guid: 2b226d1a158982149ac1495f8f9ced2c, type: 3}
+  - {fileID: 21300000, guid: 6783f0b83971ba84d85b174d9d871396, type: 3}
+  - {fileID: 21300000, guid: 1dc03d2c15f40644ca5c4d54b3370d1e, type: 3}
+  - {fileID: 21300000, guid: 4241da51ff004514499351426a24d131, type: 3}
+  - {fileID: 21300000, guid: 75d35f85f69d35544b1813ab0c9bbce3, type: 3}
+  - {fileID: 21300000, guid: 7adfaca2b49812b44b6391ea4f8a1269, type: 3}
+  - {fileID: 21300000, guid: b4f2e12bf6c531b409d237a1c9c741cf, type: 3}
+  - {fileID: 21300000, guid: 2ec0c7395cdf06b44afa63ead8f2cd76, type: 3}
+  - {fileID: 21300000, guid: b4187c8af9c7f934e98df85abb77ba0a, type: 3}
   - {fileID: 0}
   characters:
   - {fileID: 1224287758}

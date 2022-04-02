@@ -89,18 +89,17 @@ public class DigitalDisplay : MonoBehaviour
 		switch (codeSequence.Length)
 		{
             case 1:
-                characters[0].sprite = digits[10];
+                characters[0].sprite = digits[digitJustEntered];
                 characters[1].sprite = digits[10];
-                characters[2].sprite = digits[digitJustEntered];
+                characters[2].sprite = digits[10];
                 break;
             case 2:
                 //characters[0].sprite = digits[10];
-                characters[0].sprite = characters[1].sprite;
                 characters[1].sprite = digits[digitJustEntered];
+                characters[2].sprite = digits[10];
                 break;
             case 3:
-                characters[0].sprite = characters[1].sprite;
-                characters[1].sprite = characters[2].sprite;
+                
                 characters[2].sprite = digits[digitJustEntered];
                 break;
         }
