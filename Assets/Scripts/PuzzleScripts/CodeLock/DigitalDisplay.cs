@@ -8,6 +8,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Image[] characters;
     private string codeSequence;
+    [SerializeField] private string CorrectCode = "471";
     // Start is called before the first frame update
     void Start()
     {
@@ -108,7 +109,7 @@ public class DigitalDisplay : MonoBehaviour
     private void CheckResults()
 	{
         //Put correct code here.
-        if(codeSequence == "471")
+        if(codeSequence == CorrectCode)
 		{
             // Do something.
             Debug.Log("Correct!");
