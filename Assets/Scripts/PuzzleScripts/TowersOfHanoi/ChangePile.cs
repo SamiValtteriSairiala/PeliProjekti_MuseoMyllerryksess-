@@ -11,6 +11,8 @@ public class ChangePile : MonoBehaviour, IInteractable
 {
     // Pile where the selected book will move
     private Transform newPile;
+    [SerializeField] private GameObject toActivate;
+    [SerializeField] private GameObject toDeactivate;
     
         public void Interact()
         {
@@ -72,6 +74,9 @@ public class ChangePile : MonoBehaviour, IInteractable
             // Check if the object has 5 children (meaning a win)
             if(GameObject.Find("BookshelfClickbox3").transform.childCount == 5){
                 Debug.Log("laaatiiinooooooo breeeeiiik?");
+                toActivate.SetActive(true);
+                toDeactivate.SetActive(false);
+                
 
                 // TODO! do the win dance (aka latino break)
         }
