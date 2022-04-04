@@ -15,7 +15,7 @@ public class DigitalDisplay : MonoBehaviour
         codeSequence = "";
         for(int i = 0; i <= characters.Length - 1; i++)
 		{
-            characters[i].sprite = digits[10];
+            characters[i].sprite = digits[0];
 		}
 
         PushTheButton.ButtonPressed += AddDigitToCodeSequence;
@@ -125,7 +125,7 @@ public class DigitalDisplay : MonoBehaviour
 	{
         for(int i = 0; i <= characters.Length - 1; i++)
 		{
-            characters[i].sprite = digits[10];
+            characters[i].sprite = digits[0];
 		}
         codeSequence = "";
 	}
