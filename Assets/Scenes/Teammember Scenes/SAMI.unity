@@ -5033,10 +5033,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberLock
       objectReference: {fileID: 0}
-    - target: {fileID: 7634670663746852746, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
 --- !u!1001 &7068876111839997262
