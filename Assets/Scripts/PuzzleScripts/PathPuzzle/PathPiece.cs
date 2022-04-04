@@ -7,9 +7,9 @@ public class PathPiece : MonoBehaviour
 
 
     private BoxCollider2D BC2D;
-     public Sprite currentSprite;
+    //  public Sprite currentSprite;
     private SpriteRenderer spriteRenderer;
-    public Sprite newSprite;
+    // public Sprite newSprite;
     public PathPuzzle PathManager;
     private GameObject StartPiece;
     public GameObject Boat;
@@ -19,10 +19,11 @@ public class PathPiece : MonoBehaviour
     {
         BC2D = gameObject.GetComponent<BoxCollider2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
-        currentSprite = spriteRenderer.sprite;
+        // currentSprite = spriteRenderer.sprite;
         Boat = GameObject.Find("Boat");
         PathManager = Boat.GetComponent<PathPuzzle>();
         StartPiece = GameObject.Find("StartPath");
+        spriteRenderer.color = Color.white;
     }
 
     // Update is called once per frame
@@ -33,7 +34,7 @@ public class PathPiece : MonoBehaviour
             Debug.Log("Resetting to orginal");
         }
         if(Restart == true){
-            spriteRenderer.sprite = currentSprite;
+            spriteRenderer.color = Color.white;
             Restart = false;
         }
     }
@@ -45,6 +46,6 @@ public class PathPiece : MonoBehaviour
         // Correct move.
     }
     void ChangeSprite(){
-        spriteRenderer.sprite = newSprite;
+        spriteRenderer.color = Color.green;
     }
 }

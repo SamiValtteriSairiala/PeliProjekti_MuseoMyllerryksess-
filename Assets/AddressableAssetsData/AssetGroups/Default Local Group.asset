@@ -16,7 +16,11 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 48d75ce211e35fd458e309256cc08bcc
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 474fbab5e4b7545458a271e246b05261
+    m_Address: Assets/Art/Sprites/vesi_pala.png
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: bac69473601d4eb4fbf17796187f313f, type: 2}
   m_SchemaSet:

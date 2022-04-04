@@ -8,7 +8,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Image[] characters;
     private string codeSequence;
-    [SerializeField] private string CorrectCode = "471";
+    [SerializeField] private string CorrectCode = "174";
     // Start is called before the first frame update
     void Start()
     {

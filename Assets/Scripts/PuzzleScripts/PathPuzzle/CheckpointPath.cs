@@ -10,15 +10,23 @@ public class CheckpointPath : MonoBehaviour
     private GameObject StartPiece;
     public GameObject Boat;
     public bool Restart = false;
+    [SerializeField] private GameObject WallCollider;
+    [SerializeField] private GameObject ThirdNumber;
+
 
     public bool CheckPointReached = false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         currentSprite = spriteRenderer.sprite;
         Boat = GameObject.Find("Boat");
         StartPiece = GameObject.Find("StartPath");
+        CheckPointReached = false;
+        WallCollider.SetActive(false);
+        if(ThirdNumber.activeInHierarchy == true){
+            WallCollider.SetActive(true);
+        }
     }
 
     // Update is called once per frame
@@ -29,7 +37,7 @@ public class CheckpointPath : MonoBehaviour
             Debug.Log("Resetting to orginal");
         }
         if(Restart == true){
-            spriteRenderer.sprite = currentSprite;
+            spriteRenderer.color = Color.white;
             CheckPointReached = false;
             Restart = false;
         }
@@ -37,11 +45,14 @@ public class CheckpointPath : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         CheckPointReached = true;
+        if(ThirdNumber.activeInHierarchy == true){
+            WallCollider.SetActive(false);
+        }
         // Change sprite.
         ChangeSprite();
         // Correct move.
     }
     void ChangeSprite(){
-        spriteRenderer.sprite = newSprite;
+        spriteRenderer.color = Color.green;
     }
 }
