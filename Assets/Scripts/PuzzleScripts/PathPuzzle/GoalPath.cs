@@ -69,7 +69,7 @@ public class GoalPath : MonoBehaviour
                 ChangeSprite();
                 // Correct move.
                 //Add something here that happens when winning.
-                Invoke("ClosePuzzle", 5f);
+                Invoke("ClosePuzzle", 10f);
                 ReachedGoal3 = true;
 
             }

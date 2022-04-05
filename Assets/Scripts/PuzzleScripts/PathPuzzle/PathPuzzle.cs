@@ -41,7 +41,9 @@ public class PathPuzzle : MonoBehaviour
         }
         if (restart == false)
         {
+            
             this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
+            
         }
         if (FirstNumber.activeInHierarchy == true)
         {
