@@ -11,6 +11,7 @@ public class PathPuzzle : MonoBehaviour
     public bool restart = false;
     public float speed;
     private Vector2 targetPosition;
+    private Vector2 currentPos;
 
     [SerializeField] private GoalPath GoalPiece;
 
@@ -36,6 +37,7 @@ public class PathPuzzle : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
+            currentPos = this.transform.position;
             targetPosition = Input.mousePosition;
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
@@ -43,7 +45,20 @@ public class PathPuzzle : MonoBehaviour
         {
             
             this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-            
+
+            if(transform.position.x < targetPosition.x && ((Mathf.Abs(targetPosition.x - this.transform.position.x) > Mathf.Abs(targetPosition.y - this.transform.position.y)))){
+                this.transform.localRotation = Quaternion.Euler(0 , 0 , -90);
+            }
+            if(transform.position.x > targetPosition.x && ((Mathf.Abs(targetPosition.x - this.transform.position.x) > Mathf.Abs(targetPosition.y - this.transform.position.y)))){
+                this.transform.localRotation = Quaternion.Euler(0 , 0 , 90);
+            }
+            if(transform.position.y < targetPosition.y && ((Mathf.Abs(targetPosition.x - this.transform.position.x) < Mathf.Abs(targetPosition.y - this.transform.position.y)))){
+                this.transform.localRotation = Quaternion.Euler(0 , 0 , 0);
+            }
+            if(transform.position.y > targetPosition.y && ((Mathf.Abs(targetPosition.x - this.transform.position.x) < Mathf.Abs(targetPosition.y - this.transform.position.y)))){
+                this.transform.localRotation = Quaternion.Euler(0 , 0 , -180);
+            }
+        
         }
         if (FirstNumber.activeInHierarchy == true)
         {
