@@ -14,6 +14,7 @@ public class TimerClock : MonoBehaviour, IInteractable
     public void Interact()
     {
         Timer.StartTimer();
+        gameObject.SetActive(false);
         
     }
 }
