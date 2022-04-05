@@ -15,6 +15,7 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private GameObject FirstNumber1;
     [SerializeField] private GameObject SecondNumber7;
     [SerializeField] private GameObject ThirdNumber4;
+    [SerializeField] private GameObject DownStairs;
 
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
@@ -92,6 +93,7 @@ public class GoalPath : MonoBehaviour
     public void ClosePuzzle()
     {
         WholePathPuzzle.SetActive(false);
+        DownStairs.SetActive(true);
     }
     void ChangeSprite()
     {
