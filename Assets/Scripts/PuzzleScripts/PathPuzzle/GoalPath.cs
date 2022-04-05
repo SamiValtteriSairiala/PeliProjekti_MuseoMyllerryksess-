@@ -42,7 +42,7 @@ public class GoalPath : MonoBehaviour
                 ChangeSprite();
                 // Correct move.
                 //Add something here that happens when winning.
-                Invoke("ChangeToSecond", 2f);
+                Invoke("ChangeToSecond", 0.1f);
                 ReachedGoal1 = true;
                 PathPuzzle.restart = true;
             }
@@ -55,7 +55,7 @@ public class GoalPath : MonoBehaviour
                 ChangeSprite();
                 // Correct move.
                 //Add something here that happens when winning.
-                Invoke("ChangeToThird", 2f);
+                Invoke("ChangeToThird", 0.1f);
                 ReachedGoal2 = true;
                 PathPuzzle.restart = true;
             }
@@ -69,7 +69,6 @@ public class GoalPath : MonoBehaviour
                 ChangeSprite();
                 // Correct move.
                 //Add something here that happens when winning.
-                Invoke("ClosePuzzle", 10f);
                 ReachedGoal3 = true;
 
             }
@@ -90,7 +89,7 @@ public class GoalPath : MonoBehaviour
         SecondNumber.SetActive(false);
         ThirdNumber.SetActive(true);
     }
-    void ClosePuzzle()
+    public void ClosePuzzle()
     {
         WholePathPuzzle.SetActive(false);
     }
