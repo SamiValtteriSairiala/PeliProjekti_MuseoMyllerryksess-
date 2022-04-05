@@ -7,6 +7,8 @@ public class DigitalDisplay : MonoBehaviour
 {
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Image[] characters;
+    [SerializeField] private GameObject toActivate;
+    [SerializeField] private GameObject toDeactivate;
     private string codeSequence;
 
     public bool DownLock = true;
@@ -117,6 +119,8 @@ public class DigitalDisplay : MonoBehaviour
             {
                 // Do something.
                 Debug.Log("Correct!");
+                toActivate.SetActive(true);
+                toDeactivate.SetActive(false);
             }
         else
         {

@@ -16,6 +16,7 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private GameObject SecondNumber7;
     [SerializeField] private GameObject ThirdNumber4;
     [SerializeField] private GameObject DownStairs;
+    [SerializeField] private GameObject boat;
 
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
@@ -71,6 +72,7 @@ public class GoalPath : MonoBehaviour
                 // Correct move.
                 //Add something here that happens when winning.
                 ReachedGoal3 = true;
+                boat.SetActive(true);
 
             }
         }
