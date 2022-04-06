@@ -38,41 +38,60 @@ public class GoalPath : MonoBehaviour
         {
             if (FirstNumber.activeInHierarchy == true)
             {
+                if (PathPuzzle.CorrectTile == 3)
+                {
 
-                FirstNumber1.SetActive(true);
-                // Change sprite.                      
-                ChangeSprite();
-                // Correct move.
-                //Add something here that happens when winning.
-                Invoke("ChangeToSecond", 0.1f);
-                ReachedGoal1 = true;
-                PathPuzzle.restart = true;
+
+                    FirstNumber1.SetActive(true);
+                    // Change sprite.                      
+                    // ChangeSprite();
+                    // Correct move.
+                    //Add something here that happens when winning.
+                    Invoke("ChangeToSecond", 0.1f);
+                    PathPuzzle.CorrectTile = 0;
+                    PathPuzzle.WrongTile = 0;
+                    ReachedGoal1 = true;
+                    PathPuzzle.restart = true;
+                }
             }
             if (SecondNumber.activeInHierarchy == true)
             {
+                if (PathPuzzle.CorrectTile == 5)
+                {
 
-                FirstNumber1.SetActive(true);
-                SecondNumber7.SetActive(true);
-                // Change sprite.                      
-                ChangeSprite();
-                // Correct move.
-                //Add something here that happens when winning.
-                Invoke("ChangeToThird", 0.1f);
-                ReachedGoal2 = true;
-                PathPuzzle.restart = true;
+
+                    FirstNumber1.SetActive(true);
+                    SecondNumber7.SetActive(true);
+                    // Change sprite.                      
+                    // ChangeSprite();
+                    // Correct move.
+                    //Add something here that happens when winning.
+                    Invoke("ChangeToThird", 0.1f);
+                    PathPuzzle.CorrectTile = 0;
+                    PathPuzzle.WrongTile = 0;
+                    ReachedGoal2 = true;
+                    PathPuzzle.restart = true;
+                }
             }
             if (ThirdNumber.activeInHierarchy == true)
             {
-                FirstNumber1.SetActive(true);
-                SecondNumber7.SetActive(true);
-                ThirdNumber4.SetActive(true);
-                Debug.Log("Goal!");
-                // Change sprite.                      
-                ChangeSprite();
-                // Correct move.
-                //Add something here that happens when winning.
-                ReachedGoal3 = true;
-                boat.SetActive(true);
+                if (PathPuzzle.CorrectTile == 7)
+                {
+
+
+                    FirstNumber1.SetActive(true);
+                    SecondNumber7.SetActive(true);
+                    ThirdNumber4.SetActive(true);
+                    PathPuzzle.CorrectTile = 0;
+                    PathPuzzle.WrongTile = 0;
+                    Debug.Log("Goal!");
+                    // Change sprite.                      
+                    // ChangeSprite();
+                    // Correct move.
+                    //Add something here that happens when winning.
+                    ReachedGoal3 = true;
+                    boat.SetActive(true);
+                }
 
             }
         }

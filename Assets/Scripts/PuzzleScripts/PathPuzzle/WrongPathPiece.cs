@@ -7,6 +7,7 @@ public class WrongPathPiece : MonoBehaviour
     private BoxCollider2D bc2d;
     private PathPuzzle PathPuzzle;
     private GameObject PathManager;
+    private bool CollectedThis = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +24,14 @@ public class WrongPathPiece : MonoBehaviour
     void OnTriggerEnter2D(Collider2D col)
     {
         //Resets player
-        PathPuzzle.restart = true;
+        // PathPuzzle.restart = true;
+        if(CollectedThis == false){
+
+       
+        PathPuzzle.CorrectTile --;
+        CollectedThis = true;
+         }
+
         Debug.Log("Player touched wrong piece ");
 
     }

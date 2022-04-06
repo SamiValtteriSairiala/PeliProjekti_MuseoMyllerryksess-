@@ -12,21 +12,24 @@ public class CheckpointPath : MonoBehaviour
     public bool Restart = false;
     [SerializeField] private GameObject WallCollider;
     [SerializeField] private GameObject ThirdNumber;
+    private PathPuzzle PathPuzzle;
 
 
     public bool CheckPointReached = false;
+    private bool CollectedThis = false;
     // Start is called before the first frame update
     void Awake()
     {
+        PathPuzzle = FindObjectOfType<PathPuzzle>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
         currentSprite = spriteRenderer.sprite;
         Boat = GameObject.Find("Boat");
         StartPiece = GameObject.Find("StartPath");
         CheckPointReached = false;
         WallCollider.SetActive(false);
-        if(ThirdNumber.activeInHierarchy == true){
-            WallCollider.SetActive(true);
-        }
+        // if(ThirdNumber.activeInHierarchy == true){
+        //     WallCollider.SetActive(true);
+        // }
     }
 
     // Update is called once per frame
@@ -37,19 +40,21 @@ public class CheckpointPath : MonoBehaviour
             Debug.Log("Resetting to orginal");
         }
         if(Restart == true){
-            spriteRenderer.color = Color.white;
+            // spriteRenderer.color = Color.white;
             CheckPointReached = false;
+            CollectedThis = false;
             Restart = false;
         }
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        CheckPointReached = true;
-        if(ThirdNumber.activeInHierarchy == true){
-            WallCollider.SetActive(false);
+        if(CollectedThis == false){
+            CheckPointReached = true;
+            PathPuzzle.CorrectTile ++;
+            CollectedThis = true;
         }
         // Change sprite.
-        ChangeSprite();
+        // ChangeSprite();
         // Correct move.
     }
     void ChangeSprite(){

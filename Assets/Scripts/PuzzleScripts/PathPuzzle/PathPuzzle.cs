@@ -19,6 +19,9 @@ public class PathPuzzle : MonoBehaviour
     [SerializeField] private GameObject SecondNumber;
     [SerializeField] private GameObject ThirdNumber;
 
+    public int CorrectTile;
+    public int WrongTile;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +33,7 @@ public class PathPuzzle : MonoBehaviour
    
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
 
 
@@ -71,6 +74,8 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece.transform.position.x, StartPiece.transform.position.y);
                 gameObject.transform.position = StartPiece.transform.position;
                 restart = false;
+                CorrectTile = 0;
+                WrongTile = 0;
 
             }
         }
@@ -85,6 +90,8 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece2.transform.position.x, StartPiece2.transform.position.y);
                 gameObject.transform.position = StartPiece2.transform.position;
                 restart = false;
+                CorrectTile = 0;
+                WrongTile = 0;
 
             }
         }
@@ -99,11 +106,17 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece3.transform.position.x, StartPiece3.transform.position.y);
                 gameObject.transform.position = StartPiece3.transform.position;
                 restart = false;
+                CorrectTile = 0;
+                WrongTile = 0;
 
             }
         }
 
 
+    }
+
+    public void RestartButton(){
+        restart = true;
     }
 
 }
