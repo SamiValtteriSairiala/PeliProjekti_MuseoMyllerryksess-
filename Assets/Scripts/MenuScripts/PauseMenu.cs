@@ -26,12 +26,20 @@ public class PauseMenu : MonoBehaviour
     public void OpenPauseMenu()
     {
         PauseMenuCanvas.SetActive(true);
-        TimerScript.TimerPaused = true;
+        if (TimerScript.TimerHasStarted == true)
+        {
+            TimerScript.TimerPaused = true;
+        }
+
     }
 
     public void ClosePauseMenu()
     {
         PauseMenuCanvas.SetActive(false);
-        TimerScript.TimerPaused = false;
+        if (TimerScript.TimerHasStarted == true)
+        {
+            TimerScript.TimerPaused = false;
+        }
+
     }
 }

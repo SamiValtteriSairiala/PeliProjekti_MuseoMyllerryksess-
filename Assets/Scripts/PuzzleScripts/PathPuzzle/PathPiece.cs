@@ -14,6 +14,9 @@ public class PathPiece : MonoBehaviour
     private GameObject StartPiece;
     public GameObject Boat;
     public bool Restart = false;
+
+    public int CorrectTile;
+    private bool CollectedThis = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,7 @@ public class PathPiece : MonoBehaviour
         Boat = GameObject.Find("Boat");
         PathManager = Boat.GetComponent<PathPuzzle>();
         StartPiece = GameObject.Find("StartPath");
-        spriteRenderer.color = Color.white;
+        // spriteRenderer.color = Color.white;
     }
 
     // Update is called once per frame
@@ -34,15 +37,20 @@ public class PathPiece : MonoBehaviour
             Debug.Log("Resetting to orginal");
         }
         if(Restart == true){
-            spriteRenderer.color = Color.white;
+            // spriteRenderer.color = Color.white;
+            CollectedThis = false;
             Restart = false;
         }
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        if(CollectedThis == false){
+            PathManager.CorrectTile ++;
+            CollectedThis = true;
+        }
         
         // Change sprite.
-        ChangeSprite();
+        // ChangeSprite();
         // Correct move.
     }
     void ChangeSprite(){
