@@ -30,21 +30,21 @@ public class ChangePile : MonoBehaviour, IInteractable
                 var pos = bookPosition.anchoredPosition;
 
                 // When the pile is empty the book will be in the lowest position
-                if(gameObject.transform.childCount == 0){
+                if(gameObject.transform.childCount == 0 && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 0);
  
                     MoveBook.currentBook = null;
                 }
                 // When 1 book in pile, the book will be on top of it
-                else if(gameObject.transform.childCount == 1 && bookPosition.rect.width < gameObject.transform.GetChild(0).GetComponent<RectTransform>().rect.width){
+                else if(gameObject.transform.childCount == 1 && bookPosition.rect.width < gameObject.transform.GetChild(0).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 50);
 
                     MoveBook.currentBook = null;
                 }
                 // When 2 books in pile, the book will come on top
-                else if(gameObject.transform.childCount == 2 && bookPosition.rect.width < gameObject.transform.GetChild(1).GetComponent<RectTransform>().rect.width){
+                else if(gameObject.transform.childCount == 2 && bookPosition.rect.width < gameObject.transform.GetChild(1).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 100);
 
@@ -52,7 +52,7 @@ public class ChangePile : MonoBehaviour, IInteractable
                 }
                 // When 3 books in pile, the book will come on top
 
-                else if(gameObject.transform.childCount == 3 && bookPosition.rect.width < gameObject.transform.GetChild(2).GetComponent<RectTransform>().rect.width){
+                else if(gameObject.transform.childCount == 3 && bookPosition.rect.width < gameObject.transform.GetChild(2).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 150);
 
@@ -60,7 +60,7 @@ public class ChangePile : MonoBehaviour, IInteractable
                 }
                 // When 4 books in pile, the book will come on top
 
-                else if(gameObject.transform.childCount == 4 && bookPosition.rect.width < gameObject.transform.GetChild(3).GetComponent<RectTransform>().rect.width){
+                else if(gameObject.transform.childCount == 4 && bookPosition.rect.width < gameObject.transform.GetChild(3).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 200);
 

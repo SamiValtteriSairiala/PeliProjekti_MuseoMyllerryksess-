@@ -11,7 +11,7 @@ public class MoveBook : MonoBehaviour, IInteractable
     public static Transform currentBook;
 
     // the parent where the book currently exists
-    private Transform currentPile;
+    public static Transform currentPile;
 
 
     // Selects a book if it is on top of the pile (meaning it is the smallest book there is)
