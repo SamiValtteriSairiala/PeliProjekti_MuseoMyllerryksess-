@@ -14,6 +14,7 @@ public class DigitalDisplay : MonoBehaviour
     public bool DownLock = true;
     [SerializeField] private string CorrectCode = "174";
     [SerializeField] private string CorrectCodeOutside = "232";
+    [SerializeField] private GameObject OfficeScreen;
     // Start is called before the first frame update
     void Start()
     {
@@ -117,6 +118,8 @@ public class DigitalDisplay : MonoBehaviour
             //Put correct code here.
             if (codeSequence == CorrectCode && DownLock == true || codeSequence == CorrectCodeOutside && DownLock == false)
             {
+                OfficeScreen.SetActive(true);
+                this.gameObject.SetActive(false);
                 // Do something.
                 Debug.Log("Correct!");
                 toActivate.SetActive(true);

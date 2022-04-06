@@ -2505,6 +2505,10 @@ PrefabInstance:
       value: 174
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356026, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: OfficeScreen
+      value: 
+      objectReference: {fileID: 1112784275}
+    - target: {fileID: 6597045006149356026, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: toDeactivate
       value: 
       objectReference: {fileID: 2057560251}
