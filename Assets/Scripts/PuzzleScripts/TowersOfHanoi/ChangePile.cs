@@ -44,7 +44,7 @@ public class ChangePile : MonoBehaviour, IInteractable
                     MoveBook.currentBook = null;
                 }
                 // When 2 books in pile, the book will come on top
-                else if(gameObject.transform.childCount == 2 && bookPosition.rect.width < gameObject.transform.GetChild(1).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
+                else if(gameObject.transform.childCount == 2 && bookPosition.rect.width < gameObject.transform.GetChild(1).GetComponent<RectTransform>().rect.width && bookPosition.rect.width < gameObject.transform.GetChild(0).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
                     bookPosition.anchoredPosition = new Vector3(pos.x, 100);
 
