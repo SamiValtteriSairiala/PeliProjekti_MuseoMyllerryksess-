@@ -17,7 +17,11 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
 
-        DontDestroyOnLoad(this.gameObject);
+        // DontDestroyOnLoad(this.gameObject);
+    }
+
+    void Awake(){
+
     }
 
 
@@ -29,6 +33,7 @@ public class SoundManager : MonoBehaviour
         if (MusicIsMuted == true)
         {
             MuteMusic();
+            
         }
         if (MusicIsMuted == false && ToggleMusic.isOn == false)
         {
