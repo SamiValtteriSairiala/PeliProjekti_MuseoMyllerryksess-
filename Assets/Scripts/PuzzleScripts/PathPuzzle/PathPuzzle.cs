@@ -22,6 +22,8 @@ public class PathPuzzle : MonoBehaviour
     public int CorrectTile;
     public int WrongTile;
 
+    
+
 
     // Start is called before the first frame update
     void Start()

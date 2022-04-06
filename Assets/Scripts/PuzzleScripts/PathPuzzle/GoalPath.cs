@@ -12,11 +12,14 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private GameObject SecondNumber;
     [SerializeField] private GameObject ThirdNumber;
 
-    [SerializeField] private GameObject FirstNumber1;
-    [SerializeField] private GameObject SecondNumber7;
-    [SerializeField] private GameObject ThirdNumber4;
+    [SerializeField] private SpriteRenderer FirstNumber1;
+    [SerializeField] private SpriteRenderer SecondNumber7;
+    [SerializeField] private SpriteRenderer ThirdNumber4;
     [SerializeField] private GameObject DownStairs;
     [SerializeField] private GameObject boat;
+    [SerializeField] private Sprite Sprite1;
+    [SerializeField] private Sprite Sprite2;
+    [SerializeField] private Sprite Sprite3;
 
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
@@ -42,7 +45,7 @@ public class GoalPath : MonoBehaviour
                 {
 
 
-                    FirstNumber1.SetActive(true);
+                    FirstNumber1.sprite = Sprite1;
                     // Change sprite.                      
                     // ChangeSprite();
                     // Correct move.
@@ -60,8 +63,8 @@ public class GoalPath : MonoBehaviour
                 {
 
 
-                    FirstNumber1.SetActive(true);
-                    SecondNumber7.SetActive(true);
+                   FirstNumber1.sprite = Sprite1;
+                   SecondNumber7.sprite = Sprite2;
                     // Change sprite.                      
                     // ChangeSprite();
                     // Correct move.
@@ -79,9 +82,9 @@ public class GoalPath : MonoBehaviour
                 {
 
 
-                    FirstNumber1.SetActive(true);
-                    SecondNumber7.SetActive(true);
-                    ThirdNumber4.SetActive(true);
+                    FirstNumber1.sprite = Sprite1;
+                   SecondNumber7.sprite = Sprite2;
+                   ThirdNumber4.sprite = Sprite3;
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
                     Debug.Log("Goal!");
