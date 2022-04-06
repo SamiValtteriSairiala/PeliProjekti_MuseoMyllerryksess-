@@ -9,6 +9,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private Image[] characters;
     [SerializeField] private GameObject toActivate;
     [SerializeField] private GameObject toDeactivate;
+    [SerializeField] private GameObject toDeactivate2;
     private string codeSequence;
 
     public bool DownLock = true;
@@ -119,7 +120,7 @@ public class DigitalDisplay : MonoBehaviour
             if (codeSequence == CorrectCode && DownLock == true || codeSequence == CorrectCodeOutside && DownLock == false)
             {
                 OfficeScreen.SetActive(true);
-                this.gameObject.SetActive(false);
+                toDeactivate2.SetActive(false);
                 // Do something.
                 Debug.Log("Correct!");
                 toActivate.SetActive(true);

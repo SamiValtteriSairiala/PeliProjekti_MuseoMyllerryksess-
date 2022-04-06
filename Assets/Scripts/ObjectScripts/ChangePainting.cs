@@ -8,7 +8,12 @@ public class ChangePainting : MonoBehaviour, IInteractable
 {
     public string UnlockItem;
     [SerializeField] private GameObject toActivate;
+    [SerializeField] private GameObject toActivate2;
     [SerializeField] private GameObject toDestroy;
+    [SerializeField] private GameObject checkIfDestroyed1;
+    [SerializeField] private GameObject checkIfDestroyed2;
+    //[SerializeField] private GameObject checkIfDestroyed3;
+    [SerializeField] private GameObject toFinish;
     private GameObject inventory;
 
     public void Interact()
@@ -23,8 +28,11 @@ public class ChangePainting : MonoBehaviour, IInteractable
                     inventory.GetComponent<Inventory>().currentSelectedSlot.gameObject.transform.GetChild(0).GetComponent<Image>().sprite = Resources.Load<Sprite>("Inventory Items/empty_item");
                     Debug.Log("Unlocked");
                     
-                    
+                    if(checkIfDestroyed1 == null && checkIfDestroyed2 == null){
+                        toFinish.SetActive(true);
+                    }
                     toActivate.SetActive(true);
+                    toActivate2.SetActive(true);
                     Destroy(toDestroy);
                 }
             }

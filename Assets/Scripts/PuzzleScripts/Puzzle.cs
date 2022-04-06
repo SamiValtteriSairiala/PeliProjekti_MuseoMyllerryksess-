@@ -16,6 +16,10 @@ namespace PuzzleScript
 
         [SerializeField] private SpriteRenderer EmptySpaceSprite;
 
+        [SerializeField] private GameObject toDeActivate;
+    
+        [SerializeField] private GameObject toActivate;
+
 
         void Start()
         {
@@ -64,6 +68,11 @@ namespace PuzzleScript
                 Done = true;
                 this.enabled = false;
                 EmptySpaceSprite.enabled = true;
+                
+                // Deactivate clickbox for puzzle and activate clickbox for ready painting
+                
+                toDeActivate.SetActive(false);
+                toActivate.SetActive(true);
             }
         }
         public void Shuffle()
