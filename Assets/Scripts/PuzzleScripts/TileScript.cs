@@ -8,7 +8,7 @@ namespace PuzzleScript
     public class TileScript : MonoBehaviour
     {
         public Vector3 TargetPos;
-        private Vector3 correctPos;
+        public Vector3 correctPos;
         public int number;
         public bool inRightPlace;
 
@@ -23,7 +23,7 @@ namespace PuzzleScript
         void Update()
         {
             transform.position = Vector3.Lerp(transform.position, TargetPos, 0.05f);
-            if (TargetPos == correctPos)
+            if (TargetPos[0] == correctPos[0] && TargetPos[1] == correctPos[1])
             {
                 inRightPlace = true;
             }
