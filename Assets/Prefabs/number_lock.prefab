@@ -286,7 +286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5e3917b88afd55a4485facbf38847712, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0163517bad32c0c48a9a5dbfc27184a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -2040,7 +2040,13 @@ MonoBehaviour:
   - {fileID: 6597045004048346392}
   - {fileID: 6597045004554165639}
   - {fileID: 6597045005485585440}
+  toActivate: {fileID: 0}
+  toDeactivate: {fileID: 0}
+  toDeactivate2: {fileID: 0}
+  DownLock: 1
   CorrectCode: 471
+  CorrectCodeOutside: 232
+  OfficeScreen: {fileID: 0}
 --- !u!1 &7634670663746852746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,7 +2065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6597045004360096581
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2123,7 +2129,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6597045004360096602
 MonoBehaviour:
   m_ObjectHideFlags: 0
