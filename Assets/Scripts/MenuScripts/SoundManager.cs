@@ -13,15 +13,21 @@ public class SoundManager : MonoBehaviour
 
     [SerializeField] private Toggle ToggleMusic;
     [SerializeField] private Toggle ToggleSFX;
+
+    private GameObject ToggleMusicParent;
+    private GameObject ToggleSfxParent;
     // Start is called before the first frame update
     void Start()
     {
-
-        // DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
+       
     }
 
     void Awake(){
-
+        ToggleMusicParent = GameObject.Find("MusicToggle");
+        ToggleSfxParent = GameObject.Find("SFXToggle");
+        ToggleMusic = ToggleMusicParent.GetComponent<Toggle>();
+        ToggleSFX = ToggleSfxParent.GetComponent<Toggle>();
     }
 
 
@@ -32,19 +38,24 @@ public class SoundManager : MonoBehaviour
         //For button usage.
         if (MusicIsMuted == true)
         {
+            ToggleMusic.isOn = false;
             MuteMusic();
+            
             
         }
         if (MusicIsMuted == false && ToggleMusic.isOn == false)
         {
+            ToggleMusic.isOn = true;
             UnMuteMusic();
         }
         if (SFXisMuted == true)
         {
+            ToggleSFX.isOn = false;
             MuteSFX();
         }
         if (SFXisMuted == false && ToggleSFX.isOn == false)
         {
+            ToggleSFX.isOn = true;
             UnMuteSFX();
         }
     }
