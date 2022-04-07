@@ -8,7 +8,7 @@ public class OutsideMove : MonoBehaviour
     [SerializeField] private GameObject LobbyScreen;
     // Start is called before the first frame update
     private GameObject GameManager;
-    private BlackScreen BlackScreenScript;
+    [SerializeField]private BlackScreen BlackScreenScript;
 
     // Start is called before the first frame update
     void Start()

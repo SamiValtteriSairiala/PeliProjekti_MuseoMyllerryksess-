@@ -17,11 +17,11 @@ public class PauseMenu : MonoBehaviour
     {
         GameManager = GameObject.Find("GameManager");
         TimerScript = GameManager.GetComponent<Timer>();
+        
     }
 
     void Awake(){
-       AudioManager = GameObject.Find("SoundManager");
-       m_SoundManager = AudioManager.GetComponent<SoundManager>();
+       
     }
 
     // Update is called once per frame
@@ -32,18 +32,7 @@ public class PauseMenu : MonoBehaviour
             ClosePauseMenu();
         }
 
-        if(m_SoundManager.MusicIsMuted == true){
-            MusicToggle.isOn = false;
-        }
-        else{
-            MusicToggle.isOn = true;
-        }
-        if(m_SoundManager.SFXisMuted == true){
-            SFXToggle.isOn = false;
-        }
-        else{
-            SFXToggle.isOn = true;
-        }
+        
         
     }
 

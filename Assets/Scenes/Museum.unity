@@ -6468,6 +6468,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OutsideScreen: {fileID: 839701968}
   LobbyScreen: {fileID: 435759497}
+  BlackScreenScript: {fileID: 0}
 --- !u!1 &867494491
 GameObject:
   m_ObjectHideFlags: 0
@@ -7319,7 +7320,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028374843}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 01dbdb2d328760540b1b75fd185dcdfc, type: 2}
   m_audioClip: {fileID: 8300000, guid: 135b38b7668c701469a7f0b36e4b0b29, type: 3}
@@ -7572,6 +7573,7 @@ GameObject:
   - component: {fileID: 1094044085}
   - component: {fileID: 1094044086}
   - component: {fileID: 1094044087}
+  - component: {fileID: 1094044088}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -7653,6 +7655,24 @@ MonoBehaviour:
   PauseMenuCanvas: {fileID: 1354326967}
   MusicToggle: {fileID: 1303662549}
   SFXToggle: {fileID: 1303662548}
+--- !u!114 &1094044088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094044082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dcf1af2fc1d3b144790e2c938873e91f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MusicMixer: {fileID: 24100000, guid: 01dbdb2d328760540b1b75fd185dcdfc, type: 2}
+  SFXMixer: {fileID: 24100000, guid: c50b3316723b81b4496402c23ba08747, type: 2}
+  MusicIsMutedMuseum: 0
+  SFXisMuted: 0
+  ToggleMusic: {fileID: 1303662549}
+  ToggleSFX: {fileID: 1303662548}
 --- !u!1 &1112784275
 GameObject:
   m_ObjectHideFlags: 0
@@ -9338,6 +9358,18 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4780114883485040000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1094044088}
+    - target: {fileID: 4780114883485040000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MuteSFX
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780114883485040000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundManagerMuseum, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4780114883485040001, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9349,6 +9381,18 @@ PrefabInstance:
     - target: {fileID: 4780114884453147448, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780114884453147451, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1094044088}
+    - target: {fileID: 4780114884453147451, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MuteMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780114884453147451, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: SoundManagerMuseum, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4780114885281934668, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -9386,7 +9430,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4780114883339720591, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
 --- !u!114 &1303662548 stripped
 MonoBehaviour:
