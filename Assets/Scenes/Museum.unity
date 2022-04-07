@@ -7651,6 +7651,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PauseMenuCanvas: {fileID: 1354326967}
+  MusicToggle: {fileID: 1303662549}
+  SFXToggle: {fileID: 1303662548}
 --- !u!1 &1112784275
 GameObject:
   m_ObjectHideFlags: 0
@@ -9042,6 +9044,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+--- !u!114 &1303662548 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4780114883485040000, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+  m_PrefabInstance: {fileID: 1303662547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1303662549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4780114884453147451, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+  m_PrefabInstance: {fileID: 1303662547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9085046f02f69544eb97fd06b6048fe2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1326474902
 GameObject:
   m_ObjectHideFlags: 0
