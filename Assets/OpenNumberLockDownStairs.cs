@@ -6,6 +6,9 @@ public class OpenNumberLockDownStairs : MonoBehaviour
 {
     [SerializeField] private GameObject Numberlock;
     [SerializeField] private GameObject DownStairs;
+
+    [SerializeField] private GameObject LobbyScreen;
+     [SerializeField] private GameObject NumberLockLobby;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +26,11 @@ public class OpenNumberLockDownStairs : MonoBehaviour
         DownStairs.SetActive(true);
     }
 
+    public void CloseNumlockLObby(){
+        LobbyScreen.SetActive(true);
+        NumberLockLobby.SetActive(false);
+        
+    }
     void OnMouseDown(){
         Numberlock.SetActive(true);
         DownStairs.SetActive(false);

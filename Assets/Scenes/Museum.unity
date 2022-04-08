@@ -694,7 +694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toDeactivate: {fileID: 220121467}
-  toActivate: {fileID: 1112784275}
+  toActivate: {fileID: 470626133}
   object1: {fileID: 0}
   object2: {fileID: 0}
   object3: {fileID: 0}
@@ -6219,7 +6219,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2057560254}
         m_TargetAssemblyTypeName: OpenNumberLockDownStairs, Assembly-CSharp
-        m_MethodName: BackToDownStairs
+        m_MethodName: CloseNumlockLObby
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15364,6 +15364,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Numberlock: {fileID: 297925583}
   DownStairs: {fileID: 1144038356}
+  LobbyScreen: {fileID: 435759497}
+  NumberLockLobby: {fileID: 2008850844}
 --- !u!1 &2062868465
 GameObject:
   m_ObjectHideFlags: 0
