@@ -25,6 +25,8 @@ public class GoalPath : MonoBehaviour
     public bool ReachedGoal2 = false;
     public bool ReachedGoal3 = false;
 
+    public bool GreenTile = false;
+
     [SerializeField] private PathPuzzle PathPuzzle;
 
     [SerializeField] private CheckpointPath checkPoint;
@@ -50,7 +52,9 @@ public class GoalPath : MonoBehaviour
                     // ChangeSprite();
                     // Correct move.
                     //Add something here that happens when winning.
-                    Invoke("ChangeToSecond", 0.1f);
+                    GreenTile = true;
+                    ChangeSprite();
+                    Invoke("ChangeToSecond", 0.3f);
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
                     ReachedGoal1 = true;
@@ -69,7 +73,9 @@ public class GoalPath : MonoBehaviour
                     // ChangeSprite();
                     // Correct move.
                     //Add something here that happens when winning.
-                    Invoke("ChangeToThird", 0.1f);
+                    GreenTile = true;
+                    ChangeSprite();
+                    Invoke("ChangeToThird", 0.3f);
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
                     ReachedGoal2 = true;
@@ -92,6 +98,8 @@ public class GoalPath : MonoBehaviour
                     // ChangeSprite();
                     // Correct move.
                     //Add something here that happens when winning.
+                    GreenTile = true;
+                    ChangeSprite();
                     ReachedGoal3 = true;
                     boat.SetActive(true);
                 }
@@ -106,17 +114,23 @@ public class GoalPath : MonoBehaviour
     void ChangeToSecond()
     {
         FirstNumber.SetActive(false);
+        GreenTile = false;
+        spriteRenderer.color = Color.white;
         SecondNumber.SetActive(true);
     }
 
     void ChangeToThird()
     {
         SecondNumber.SetActive(false);
+        GreenTile = false;
+        spriteRenderer.color = Color.white;
         ThirdNumber.SetActive(true);
     }
     public void ClosePuzzle()
     {
         WholePathPuzzle.SetActive(false);
+        GreenTile = false;
+        spriteRenderer.color = Color.white;
         DownStairs.SetActive(true);
     }
     void ChangeSprite()

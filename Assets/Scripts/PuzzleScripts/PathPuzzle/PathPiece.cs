@@ -14,7 +14,7 @@ public class PathPiece : MonoBehaviour
     private GameObject StartPiece;
     public GameObject Boat;
     public bool Restart = false;
-
+    private GoalPath GoalScripts;
     public int CorrectTile;
     private bool CollectedThis = false;
     // Start is called before the first frame update
@@ -26,6 +26,7 @@ public class PathPiece : MonoBehaviour
         Boat = GameObject.Find("Boat");
         PathManager = Boat.GetComponent<PathPuzzle>();
         StartPiece = GameObject.Find("StartPath");
+        GoalScripts = FindObjectOfType<GoalPath>();
         // spriteRenderer.color = Color.white;
     }
 
@@ -41,6 +42,15 @@ public class PathPiece : MonoBehaviour
             CollectedThis = false;
             Restart = false;
         }
+        if(GoalScripts.GreenTile == true)
+		{
+            ChangeSprite();
+		}
+        if(GoalScripts.GreenTile == false)
+		{
+            spriteRenderer.color = Color.white;
+		}
+        
     }
     void OnTriggerEnter2D(Collider2D col)
     {

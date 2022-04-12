@@ -11,6 +11,7 @@ public class CheckpointPath : MonoBehaviour
     public GameObject Boat;
     public bool Restart = false;
     [SerializeField] private GameObject WallCollider;
+    private GoalPath GoalScripts;
     [SerializeField] private GameObject ThirdNumber;
     private PathPuzzle PathPuzzle;
 
@@ -26,6 +27,7 @@ public class CheckpointPath : MonoBehaviour
         Boat = GameObject.Find("Boat");
         StartPiece = GameObject.Find("StartPath");
         CheckPointReached = false;
+        GoalScripts = FindObjectOfType<GoalPath>();
         WallCollider.SetActive(false);
         // if(ThirdNumber.activeInHierarchy == true){
         //     WallCollider.SetActive(true);
@@ -44,6 +46,14 @@ public class CheckpointPath : MonoBehaviour
             CheckPointReached = false;
             CollectedThis = false;
             Restart = false;
+        }
+        if (GoalScripts.GreenTile == true)
+        {
+            ChangeSprite();
+        }
+        if (GoalScripts.GreenTile == false)
+        {
+            spriteRenderer.color = Color.white;
         }
     }
     void OnTriggerEnter2D(Collider2D col)
