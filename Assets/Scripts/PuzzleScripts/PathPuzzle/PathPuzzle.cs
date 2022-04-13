@@ -37,6 +37,9 @@ public class PathPuzzle : MonoBehaviour
         targetPosition = new Vector2(transform.position.x, transform.position.y);
         restart = true;
         GoalScripts = FindObjectOfType<GoalPath>();
+        StartPieceRenderer.color = Color.white;
+        StartPiece2Renderer.color = Color.white;
+        StartPiece3Renderer.color = Color.white;
     }
 
    
