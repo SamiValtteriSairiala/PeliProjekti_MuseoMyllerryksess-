@@ -2767,7 +2767,7 @@ PrefabInstance:
       objectReference: {fileID: 103691089}
     - target: {fileID: 6597045006149356026, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: CorrectCode
-      value: 174
+      value: 714
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356026, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: OfficeScreen
