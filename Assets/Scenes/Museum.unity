@@ -7818,8 +7818,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fe019e886926ae43b6d2724338f5758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timer: 0
+  Seconds: 0
   minutes: 0
+  hour: 8
   TimerText: {fileID: 120511535}
   TimerPaused: 1
   TimerHasStarted: 0
