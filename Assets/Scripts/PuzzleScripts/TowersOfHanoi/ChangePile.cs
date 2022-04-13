@@ -39,14 +39,14 @@ public class ChangePile : MonoBehaviour, IInteractable
                 // When 1 book in pile, the book will be on top of it
                 else if(gameObject.transform.childCount == 1 && bookPosition.rect.width < gameObject.transform.GetChild(0).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
-                    bookPosition.anchoredPosition = new Vector3(pos.x, 50);
+                    bookPosition.anchoredPosition = new Vector3(pos.x, 60);
 
                     MoveBook.currentBook = null;
                 }
                 // When 2 books in pile, the book will come on top
                 else if(gameObject.transform.childCount == 2 && bookPosition.rect.width < gameObject.transform.GetChild(1).GetComponent<RectTransform>().rect.width && bookPosition.rect.width < gameObject.transform.GetChild(0).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
-                    bookPosition.anchoredPosition = new Vector3(pos.x, 100);
+                    bookPosition.anchoredPosition = new Vector3(pos.x, 120);
 
                     MoveBook.currentBook = null;
                 }
@@ -54,7 +54,7 @@ public class ChangePile : MonoBehaviour, IInteractable
 
                 else if(gameObject.transform.childCount == 3 && bookPosition.rect.width < gameObject.transform.GetChild(2).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
-                    bookPosition.anchoredPosition = new Vector3(pos.x, 150);
+                    bookPosition.anchoredPosition = new Vector3(pos.x, 180);
 
                     MoveBook.currentBook = null;
                 }
@@ -62,7 +62,7 @@ public class ChangePile : MonoBehaviour, IInteractable
 
                 else if(gameObject.transform.childCount == 4 && bookPosition.rect.width < gameObject.transform.GetChild(3).GetComponent<RectTransform>().rect.width && MoveBook.currentPile != newPile){
                     MoveBook.currentBook.SetParent(newPile, false);
-                    bookPosition.anchoredPosition = new Vector3(pos.x, 200);
+                    bookPosition.anchoredPosition = new Vector3(pos.x, 240);
 
                     MoveBook.currentBook = null;
                 }
