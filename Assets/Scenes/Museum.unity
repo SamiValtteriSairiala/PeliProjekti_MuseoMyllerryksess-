@@ -8282,6 +8282,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3620800487576519626, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3620800487636680563, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -8656,7 +8660,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8947775979766837253, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9063315779248205246, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
       propertyPath: m_SizeDelta.x
@@ -11533,11 +11537,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1599996499}
-  - component: {fileID: 1599996501}
   - component: {fileID: 1599996500}
+  - component: {fileID: 1599996502}
+  - component: {fileID: 1599996501}
   m_Layer: 5
   m_Name: PathPuzzle_Clickbox
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11558,8 +11563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5385625, y: 0.58255553}
-  m_AnchoredPosition: {x: -37.5, y: -44.5}
-  m_SizeDelta: {x: 25, y: 11}
+  m_AnchoredPosition: {x: -87.84, y: 4.91}
+  m_SizeDelta: {x: 233.81, y: 83.71}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1599996500
 MonoBehaviour:
@@ -11575,32 +11580,44 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathPuzzle: {fileID: 1229567749}
   Downstairs: {fileID: 1144038356}
---- !u!61 &1599996501
-BoxCollider2D:
+--- !u!114 &1599996501
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599996498}
   m_Enabled: 1
-  m_Density: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -50.44902, y: 49.533768}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 300.03323, y: 173.66058}
-  m_EdgeRadius: 0
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1599996502
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599996498}
+  m_CullTransparentMesh: 1
 --- !u!1 &1650472255
 GameObject:
   m_ObjectHideFlags: 0
@@ -14381,9 +14398,10 @@ GameObject:
   - component: {fileID: 1983006016}
   - component: {fileID: 1983006015}
   - component: {fileID: 1983006014}
+  - component: {fileID: 1983006018}
   m_Layer: 0
   m_Name: clickbox_tytto
-  m_TagString: Untagged
+  m_TagString: Interactable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14432,7 +14450,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983006012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -14489,6 +14507,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983006012}
   m_CullTransparentMesh: 1
+--- !u!114 &1983006018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983006012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f1c4cf5f081af4a8e47baf23bda4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1999109536 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7068876113183701389, guid: cd22e966752992c48a7530804ccbfeca, type: 3}

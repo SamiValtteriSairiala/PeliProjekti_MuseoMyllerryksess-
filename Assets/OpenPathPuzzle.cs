@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OpenPathPuzzle : MonoBehaviour
+public class OpenPathPuzzle : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject PathPuzzle;
     [SerializeField] private GameObject Downstairs;
@@ -12,7 +12,7 @@ public class OpenPathPuzzle : MonoBehaviour
         
     }
 
-    void OnMouseDown(){
+    public void Interact(){
         Downstairs.SetActive(false);
         PathPuzzle.SetActive(true);
     }
