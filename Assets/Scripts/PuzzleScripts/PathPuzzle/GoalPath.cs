@@ -43,7 +43,7 @@ public class GoalPath : MonoBehaviour
         {
             if (FirstNumber.activeInHierarchy == true)
             {
-                if (PathPuzzle.CorrectTile == 3)
+                if (PathPuzzle.CorrectTile == 5)
                 {
 
 
@@ -63,7 +63,7 @@ public class GoalPath : MonoBehaviour
             }
             if (SecondNumber.activeInHierarchy == true)
             {
-                if (PathPuzzle.CorrectTile == 5)
+                if (PathPuzzle.CorrectTile == 3)
                 {
 
 

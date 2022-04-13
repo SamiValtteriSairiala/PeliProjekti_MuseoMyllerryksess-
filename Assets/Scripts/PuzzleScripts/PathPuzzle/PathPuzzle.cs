@@ -37,6 +37,7 @@ public class PathPuzzle : MonoBehaviour
         targetPosition = new Vector2(transform.position.x, transform.position.y);
         restart = true;
         GoalScripts = FindObjectOfType<GoalPath>();
+       
     }
 
    
@@ -76,10 +77,7 @@ public class PathPuzzle : MonoBehaviour
         if (FirstNumber.activeInHierarchy == true)
         {
 
-            if(GoalScripts.GreenTile == true)
-			{
-                StartPieceRenderer.color = Color.green;
-            }
+            
             //Resets player to start piece.
             if (restart == true)
             {
@@ -87,7 +85,7 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece.transform.position.x, StartPiece.transform.position.y);
                 gameObject.transform.position = StartPiece.transform.position;
                 restart = false;
-                StartPieceRenderer.color = Color.white;
+                
                 CorrectTile = 0;
                 WrongTile = 0;
 
@@ -96,10 +94,7 @@ public class PathPuzzle : MonoBehaviour
          if (SecondNumber.activeInHierarchy == true)
         {
 
-            if (GoalScripts.GreenTile == true)
-            {
-                StartPiece2Renderer.color = Color.green;
-            }
+            
             //Resets player to start piece.
             if (restart == true)
             {
@@ -107,7 +102,7 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece2.transform.position.x, StartPiece2.transform.position.y);
                 gameObject.transform.position = StartPiece2.transform.position;
                 restart = false;
-                StartPiece2Renderer.color = Color.white;
+                
                 CorrectTile = 0;
                 WrongTile = 0;
 
@@ -116,10 +111,7 @@ public class PathPuzzle : MonoBehaviour
          if (ThirdNumber.activeInHierarchy == true)
         {
 
-            if (GoalScripts.GreenTile == true)
-            {
-                StartPiece3Renderer.color = Color.green;
-            }
+            
             //Resets player to start piece.
             if (restart == true)
             {
@@ -127,7 +119,7 @@ public class PathPuzzle : MonoBehaviour
                 targetPosition = new Vector2(StartPiece3.transform.position.x, StartPiece3.transform.position.y);
                 gameObject.transform.position = StartPiece3.transform.position;
                 restart = false;
-                StartPiece3Renderer.color = Color.white;
+                
                 CorrectTile = 0;
                 WrongTile = 0;
 

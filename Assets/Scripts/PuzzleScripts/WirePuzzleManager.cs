@@ -35,9 +35,16 @@ public class WirePuzzleManager : MonoBehaviour
             // Do something.
             // This is win condition.
         }
+        if(CorrectlyWires != totalWires){
+            ReadyObject.SetActive(false);
+            NotReadyObject.SetActive(true);
+        }
     }
     public void WrongMove()
     {
         CorrectlyWires -= 1;
+        ReadyObject.SetActive(false);
+        NotReadyObject.SetActive(true);
+        
     }
 }
