@@ -9,8 +9,10 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     //henkka on poika
-    public float timer = 0;
+    public float Seconds = 0;
     public float minutes = 0;
+
+    public float hour = 8;
     public TMP_Text TimerText;
     public bool TimerPaused = true;
     public bool TimerHasStarted = false;
@@ -26,13 +28,17 @@ public class Timer : MonoBehaviour
     void Update()
     {
         if(TimerPaused == false){
-            timer += Time.deltaTime;
+            Seconds += Time.deltaTime;
         }
-        if(timer >= 60f){
+        if(Seconds >= 60f){
             minutes += 1;
-            timer = 0;
+            Seconds = 0;
         }
-        TimerText.text = minutes.ToString("00") + ":" + timer.ToString("00");
+        if(minutes >= 60f){
+            hour += 1;
+            minutes = 0;
+        }
+        TimerText.text = hour.ToString("00") + ":" + minutes.ToString("00");
         
     }
     public void StartTimer(){
