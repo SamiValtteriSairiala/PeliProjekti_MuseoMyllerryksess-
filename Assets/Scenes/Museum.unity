@@ -2750,7 +2750,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6597045004048346399, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597045004360096580, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_Camera
@@ -2916,6 +2916,10 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 1080
       objectReference: {fileID: 0}
+    - target: {fileID: 6597045004552822108, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 71c6836f3c9470b479bafdb5c53c0655, type: 3}
     - target: {fileID: 6597045004554165638, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.x
       value: 75
@@ -2973,12 +2977,20 @@ PrefabInstance:
       value: -481
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.x
       value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005535762585, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3020,13 +3032,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -330
       objectReference: {fileID: 0}
+    - target: {fileID: 6597045006149356004, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 900
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_LocalScale.y
@@ -4187,7 +4203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6597045004048346399, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597045004360096580, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_Camera
@@ -4414,12 +4430,20 @@ PrefabInstance:
       value: -481
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.x
       value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005485585447, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -95
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6597045005535762585, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4461,13 +4485,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -330
       objectReference: {fileID: 0}
+    - target: {fileID: 6597045006149356004, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 900
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6597045006149356025, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_LocalScale.y
@@ -4507,7 +4535,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7634670663746852746, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f105d9fff2478d84e852b3a2464b0475, type: 3}
@@ -7369,7 +7397,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &839701969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9672,7 +9700,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8947775979766837253, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9063315779248205246, guid: b390d4d74260bcc47b7e1e5b8a61bfaa, type: 3}
       propertyPath: m_SizeDelta.x
@@ -12696,6 +12724,7 @@ GameObject:
   - component: {fileID: 1599996500}
   - component: {fileID: 1599996502}
   - component: {fileID: 1599996501}
+  - component: {fileID: 1599996503}
   m_Layer: 5
   m_Name: PathPuzzle_Clickbox
   m_TagString: Interactable
@@ -12774,6 +12803,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599996498}
   m_CullTransparentMesh: 1
+--- !u!114 &1599996503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1599996498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8f1c4cf5f081af4a8e47baf23bda4fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650472255
 GameObject:
   m_ObjectHideFlags: 0
