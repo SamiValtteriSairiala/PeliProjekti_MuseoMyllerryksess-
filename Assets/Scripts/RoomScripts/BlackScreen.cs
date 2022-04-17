@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BlackScreen : MonoBehaviour
 {
     public bool isBlack = false;
 
     [SerializeField] private GameObject BlackScreenCanvas;
+    public AudioSource BlackScreenAudioSource;
+    public AudioClip Askel;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +17,7 @@ public class BlackScreen : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 
     public void BlackenScreen(){
         isBlack = true;
@@ -29,4 +29,12 @@ public class BlackScreen : MonoBehaviour
         isBlack = false;
         BlackScreenCanvas.SetActive(false);
     }
+
+    public void PlayStep()
+	{
+        BlackScreenAudioSource.PlayOneShot(Askel);
+	}
+
+
+    
 }

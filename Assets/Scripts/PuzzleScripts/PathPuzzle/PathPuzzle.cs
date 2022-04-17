@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class PathPuzzle : MonoBehaviour
 {
@@ -27,8 +28,11 @@ public class PathPuzzle : MonoBehaviour
 
     public int CorrectTile;
     public int WrongTile;
-
+    public AudioSource LaivaPuzzleAudioSource;
+    public AudioClip Karille;
     
+
+
 
 
     // Start is called before the first frame update
@@ -111,7 +115,10 @@ public class PathPuzzle : MonoBehaviour
          if (ThirdNumber.activeInHierarchy == true)
         {
 
-            
+			if (GoalScripts.ReachedGoal3)
+			{
+                LaivaPuzzleAudioSource.PlayOneShot(Karille);
+			}
             //Resets player to start piece.
             if (restart == true)
             {

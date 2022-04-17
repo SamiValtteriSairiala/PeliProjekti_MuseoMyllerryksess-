@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Audio;
 
 public class PushTheButton : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class PushTheButton : MonoBehaviour
     public static event Action<string> ButtonPressed = delegate { };
     private int divaiderPosition;
     private string buttonName, buttonValue;
+
+    public AudioSource Painallus;
+    public AudioClip PainallusKoodi;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +26,7 @@ public class PushTheButton : MonoBehaviour
 
     private void ButtonClicked()
 	{
+        Painallus.PlayOneShot(PainallusKoodi);
         ButtonPressed(buttonValue);
 	}
     // Update is called once per frame

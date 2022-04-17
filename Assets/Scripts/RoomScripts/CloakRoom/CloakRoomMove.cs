@@ -32,6 +32,7 @@ public class CloakRoomMove : MonoBehaviour
     public void MoveLeft(){
         CloakRoom.SetActive(false);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         LobbyScreen.SetActive(true);
     }
 
@@ -39,12 +40,14 @@ public class CloakRoomMove : MonoBehaviour
     public void OpenSafetyBox(){
         SafetyBox.SetActive(true);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         CloakRoomImage.SetActive(false);
     }
 
     public void BackToCloakRoom(){
         CloakRoomImage.SetActive(true);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         SafetyBox.SetActive(false);
     }
 }

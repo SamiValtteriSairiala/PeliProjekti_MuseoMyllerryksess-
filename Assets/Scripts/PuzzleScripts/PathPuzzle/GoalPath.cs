@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class GoalPath : MonoBehaviour
 {
@@ -30,6 +31,8 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private PathPuzzle PathPuzzle;
 
     [SerializeField] private CheckpointPath checkPoint;
+    public AudioSource LaivaPuzzleAudioSource;
+    public AudioClip Numero;
     // Start is called before the first frame update
     void Awake()
     {
@@ -54,6 +57,7 @@ public class GoalPath : MonoBehaviour
                     //Add something here that happens when winning.
                     GreenTile = true;
                     ChangeSprite();
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     Invoke("ChangeToSecond", 0.3f);
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
@@ -74,6 +78,7 @@ public class GoalPath : MonoBehaviour
                     // Correct move.
                     //Add something here that happens when winning.
                     GreenTile = true;
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     ChangeSprite();
                     Invoke("ChangeToThird", 0.3f);
                     PathPuzzle.CorrectTile = 0;
@@ -93,6 +98,7 @@ public class GoalPath : MonoBehaviour
                    ThirdNumber4.sprite = Sprite3;
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     Debug.Log("Goal!");
                     // Change sprite.                      
                     // ChangeSprite();

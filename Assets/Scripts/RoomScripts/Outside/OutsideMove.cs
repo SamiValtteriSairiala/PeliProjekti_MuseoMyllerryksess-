@@ -26,6 +26,7 @@ public class OutsideMove : MonoBehaviour
     public void MoveOutsideUp(){
         OutsideScreen.SetActive(false);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         LobbyScreen.SetActive(true);
     }
 }

@@ -16,6 +16,9 @@ public class SoundManager : MonoBehaviour
 
     private GameObject ToggleMusicParent;
     private GameObject ToggleSfxParent;
+
+    [SerializeField] private AudioSource MusicSource;
+    [SerializeField] private AudioSource SFXSource;
     // Start is called before the first frame update
     void Start()
     {

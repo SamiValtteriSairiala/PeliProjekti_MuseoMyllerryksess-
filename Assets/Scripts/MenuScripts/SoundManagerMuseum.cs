@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+
 public class SoundManagerMuseum : MonoBehaviour
 {
     public AudioMixer MusicMixer;
@@ -12,6 +13,7 @@ public class SoundManagerMuseum : MonoBehaviour
     public bool SFXisMuted = false;
     [SerializeField] private Toggle ToggleMusic;
     [SerializeField] private Toggle ToggleSFX;
+    
 
     private SoundManager SoundManager;
     // Start is called before the first frame update

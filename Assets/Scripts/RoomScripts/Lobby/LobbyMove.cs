@@ -33,6 +33,7 @@ public class LobbyMove : MonoBehaviour
     {
         LobbyScreen.SetActive(false);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         CloakRoom.SetActive(true);
         Debug.Log("Switching scene");
     }
@@ -44,6 +45,7 @@ public class LobbyMove : MonoBehaviour
         {
             LobbyScreen.SetActive(false);
             BlackScreenScript.BlackenScreen();
+            BlackScreenScript.PlayStep();
             SecondFloor.SetActive(true);
         }
 

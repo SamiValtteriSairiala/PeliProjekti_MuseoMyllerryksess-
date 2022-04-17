@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class WirePuzzleManager : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class WirePuzzleManager : MonoBehaviour
     [SerializeField] RoomsManager RoomManager;
     [SerializeField] private GameObject ReadyObject;
     [SerializeField] private GameObject NotReadyObject;
+    public AudioSource ElectricAudioSource;
+    public AudioClip Sähkötpäälle;
     // Start is called before the first frame update
     void Awake()
     {
@@ -28,6 +31,7 @@ public class WirePuzzleManager : MonoBehaviour
 
         if (CorrectlyWires == totalWires)
         {
+            ElectricAudioSource.PlayOneShot(Sähkötpäälle);
             Debug.Log("Won");
             ReadyObject.SetActive(true);
             NotReadyObject.SetActive(false);

@@ -853,6 +853,8 @@ MonoBehaviour:
   SFXMixer: {fileID: 24100000, guid: c50b3316723b81b4496402c23ba08747, type: 2}
   ToggleMusic: {fileID: 1053565298}
   ToggleSFX: {fileID: 1451100031}
+  MusicSource: {fileID: 612790892}
+  SFXSource: {fileID: 612790891}
 --- !u!82 &612790891
 AudioSource:
   m_ObjectHideFlags: 0

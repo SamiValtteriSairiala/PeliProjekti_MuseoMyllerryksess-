@@ -18,6 +18,7 @@ public class UpperFloorMove : MonoBehaviour
     public void MoveDown(){
         UpperFloor.SetActive(false);
         BlackScreenScript.BlackenScreen();
+        BlackScreenScript.PlayStep();
         LobbyScreen.SetActive(true);
     }
 

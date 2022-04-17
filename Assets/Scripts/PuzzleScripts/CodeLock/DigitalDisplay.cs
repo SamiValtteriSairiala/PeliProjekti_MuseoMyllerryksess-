@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class DigitalDisplay : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private string CorrectCode = "174";
     [SerializeField] private string CorrectCodeOutside = "232";
     [SerializeField] private GameObject OfficeScreen;
+
+    public AudioSource KoodiLukko;
+    public AudioClip KoodiV‰‰rin;
     // Start is called before the first frame update
     void Start()
     {
@@ -128,6 +132,7 @@ public class DigitalDisplay : MonoBehaviour
             }
         else
         {
+            KoodiLukko.PlayOneShot(KoodiV‰‰rin);
             Debug.Log("Wrong");
             ResetDisplay();
         }
