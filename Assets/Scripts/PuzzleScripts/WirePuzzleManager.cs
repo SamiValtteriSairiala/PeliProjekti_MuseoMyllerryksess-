@@ -13,7 +13,7 @@ public class WirePuzzleManager : MonoBehaviour
     [SerializeField] private GameObject ReadyObject;
     [SerializeField] private GameObject NotReadyObject;
     public AudioSource ElectricAudioSource;
-    public AudioClip Sähkötpäälle;
+    //public AudioClip Sï¿½hkï¿½tpï¿½ï¿½lle;
     // Start is called before the first frame update
     void Awake()
     {
@@ -31,7 +31,7 @@ public class WirePuzzleManager : MonoBehaviour
 
         if (CorrectlyWires == totalWires)
         {
-            ElectricAudioSource.PlayOneShot(Sähkötpäälle);
+            //ElectricAudioSource.PlayOneShot(Sï¿½hkï¿½tpï¿½ï¿½lle);
             Debug.Log("Won");
             ReadyObject.SetActive(true);
             NotReadyObject.SetActive(false);

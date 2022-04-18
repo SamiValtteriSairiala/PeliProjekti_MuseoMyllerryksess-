@@ -8,18 +8,20 @@ public class DigitalDisplay : MonoBehaviour
 {
     [SerializeField] private Sprite[] digits;
     [SerializeField] private Image[] characters;
-    [SerializeField] private GameObject toActivate;
-    [SerializeField] private GameObject toDeactivate;
-    [SerializeField] private GameObject toDeactivate2;
+    [SerializeField] private GameObject toOfficeArrow;
+    [SerializeField] private GameObject clickbox;
+    [SerializeField] private GameObject numberlock;
+    [SerializeField] private GameObject inventory;
     private string codeSequence;
 
-    public bool DownLock = true;
-    [SerializeField] private string CorrectCode = "174";
-    [SerializeField] private string CorrectCodeOutside = "232";
+    public bool DownLock;
+    [SerializeField] private string CorrectCode = "714";
+    [SerializeField] private string CorrectCodeOutside = "293";
     [SerializeField] private GameObject OfficeScreen;
+    [SerializeField] private GameObject FinishScreen;
 
     public AudioSource KoodiLukko;
-    public AudioClip KoodiVäärin;
+    //public AudioClip KoodiVï¿½ï¿½rin;
     // Start is called before the first frame update
     void Start()
     {
@@ -121,18 +123,26 @@ public class DigitalDisplay : MonoBehaviour
     {
        
             //Put correct code here.
-            if (codeSequence == CorrectCode && DownLock == true || codeSequence == CorrectCodeOutside && DownLock == false)
+            if (codeSequence == CorrectCode && DownLock == true)
             {
                 OfficeScreen.SetActive(true);
-                toDeactivate2.SetActive(false);
+                numberlock.SetActive(false);
                 // Do something.
-                Debug.Log("Correct!");
-                toActivate.SetActive(true);
-                toDeactivate.SetActive(false);
+                Debug.Log("Correct downstairs!");
+                toOfficeArrow.SetActive(true);
+                clickbox.SetActive(false);
+                ResetDisplay();
+                DownLock = false;
+            }
+            else if(codeSequence == CorrectCodeOutside && DownLock ==false){
+                FinishScreen.SetActive(true);
+                numberlock.SetActive(false);
+                Debug.Log("Correct toFinish!");
+                inventory.SetActive(false);
             }
         else
         {
-            KoodiLukko.PlayOneShot(KoodiVäärin);
+            //KoodiLukko.PlayOneShot(KoodiVï¿½ï¿½rin);
             Debug.Log("Wrong");
             ResetDisplay();
         }

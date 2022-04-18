@@ -14,6 +14,8 @@ public class Timer : MonoBehaviour
 
     public float hour = 8;
     public TMP_Text TimerText;
+    public TMP_Text FinalTime;
+    [SerializeField] private GameObject EndTime;
     public bool TimerPaused = true;
     public bool TimerHasStarted = false;
 
@@ -60,5 +62,10 @@ public class Timer : MonoBehaviour
         
     }
 
+    public void PauseTimer(){
+        EndTime.SetActive(true);
+        TimerPaused = true;
+        FinalTime.text = minutes.ToString("00") + ":" + Seconds.ToString("00");
+    }
     
 }
