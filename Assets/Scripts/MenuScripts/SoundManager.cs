@@ -27,6 +27,7 @@ public class SoundManager : MonoBehaviour
         {
             DontDestroyOnLoad(this.gameObject);
         }
+        
 
 
     }
@@ -41,6 +42,7 @@ public class SoundManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         //For button usage.
         if (MusicIsMuted == true)
         {

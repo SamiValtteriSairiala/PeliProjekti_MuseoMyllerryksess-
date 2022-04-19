@@ -9,7 +9,12 @@ public class BackToMainMenu : MonoBehaviour
     [SerializeField] private GameObject rooms;
     [SerializeField] private GameObject outsideScreen;
 
-    
+
+    private SoundManager SoundManager;
+
+    void Start(){
+        SoundManager = FindObjectOfType<SoundManager>();
+    }
     public void BackToMainButton()
     {
         gameObject.SetActive(false);
@@ -19,7 +24,7 @@ public class BackToMainMenu : MonoBehaviour
             child.gameObject.SetActive(false);
         }
         outsideScreen.SetActive(true);
-
+        Destroy(SoundManager);
         SceneManager.LoadScene("MainMenu");
     }
 }
