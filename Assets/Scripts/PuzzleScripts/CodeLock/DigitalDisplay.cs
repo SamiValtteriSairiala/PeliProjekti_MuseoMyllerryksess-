@@ -21,7 +21,7 @@ public class DigitalDisplay : MonoBehaviour
     [SerializeField] private GameObject FinishScreen;
 
     public AudioSource KoodiLukko;
-    //public AudioClip KoodiV��rin;
+    public AudioClip KoodiVaarin;
     // Start is called before the first frame update
     void Start()
     {
@@ -142,7 +142,7 @@ public class DigitalDisplay : MonoBehaviour
             }
         else
         {
-            //KoodiLukko.PlayOneShot(KoodiV��rin);
+            KoodiLukko.PlayOneShot(KoodiVaarin);
             Debug.Log("Wrong");
             ResetDisplay();
         }
