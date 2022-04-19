@@ -9577,7 +9577,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c50b3316723b81b4496402c23ba08747, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 4566c8e5fda9ace48bcf3ab02aa46766, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 261d1fd5f71488e498a0872b45b8a0e8, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -10550,7 +10550,7 @@ MonoBehaviour:
   isBlack: 0
   BlackScreenCanvas: {fileID: 962686636}
   BlackScreenAudioSource: {fileID: 962686641}
-  Askel: {fileID: 8300000, guid: 4566c8e5fda9ace48bcf3ab02aa46766, type: 3}
+  Askel: {fileID: 8300000, guid: 261d1fd5f71488e498a0872b45b8a0e8, type: 3}
 --- !u!114 &1094044086
 MonoBehaviour:
   m_ObjectHideFlags: 0
