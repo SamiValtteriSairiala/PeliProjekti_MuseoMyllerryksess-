@@ -135,8 +135,6 @@ public class GoalPath : MonoBehaviour
     public void ClosePuzzle()
     {
         WholePathPuzzle.SetActive(false);
-        GreenTile = false;
-        spriteRenderer.color = Color.white;
         DownStairs.SetActive(true);
     }
     void ChangeSprite()
