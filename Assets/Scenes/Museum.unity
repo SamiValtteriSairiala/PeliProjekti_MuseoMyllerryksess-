@@ -4688,7 +4688,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &544354217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6418,6 +6418,7 @@ MonoBehaviour:
   gameCanvas: {fileID: 1210187457}
   rooms: {fileID: 737308835}
   outsideScreen: {fileID: 839701968}
+  SoundManager: {fileID: 0}
 --- !u!1001 &678556990
 PrefabInstance:
   m_ObjectHideFlags: 0

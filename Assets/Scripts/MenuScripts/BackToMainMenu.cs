@@ -10,10 +10,10 @@ public class BackToMainMenu : MonoBehaviour
     [SerializeField] private GameObject outsideScreen;
 
 
-    private SoundManager SoundManager;
+    public GameObject SoundManager;
 
     void Start(){
-        SoundManager = FindObjectOfType<SoundManager>();
+        SoundManager = GameObject.Find("SoundManager");                                                                                                                                                                                                                                                      
     }
     public void BackToMainButton()
     {
