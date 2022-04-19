@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -22,15 +23,20 @@ public class SoundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject); 
-       
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("MainMenu"))
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+
+
     }
 
-    void Awake(){
-        
+    void Awake()
+    {
+
     }
 
-    
+
 
     // Update is called once per frame
     void Update()
@@ -40,8 +46,8 @@ public class SoundManager : MonoBehaviour
         {
             ToggleMusic.isOn = false;
             MuteMusic();
-            
-            
+
+
         }
         if (MusicIsMuted == false && ToggleMusic.isOn == false)
         {
