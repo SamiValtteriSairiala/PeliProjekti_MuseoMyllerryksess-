@@ -4,6 +4,7 @@ using UnityEngine;
 using InventoryScripts;
 using System;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 namespace ObjectScripts{
 
@@ -13,6 +14,8 @@ namespace ObjectScripts{
     {
         public GameObject itemExaminer;
         public string ExaminerImage;
+        public AudioSource NoteSource;
+    public AudioClip NoteAAni;
         public void Interact()
         {
             OnMouseDown();
@@ -21,6 +24,7 @@ namespace ObjectScripts{
         private void OnMouseDown()
         {   
             itemExaminer.SetActive(true);
+            NoteSource.PlayOneShot(NoteAAni);
             itemExaminer.GetComponent<Image>().sprite = Resources.Load<Sprite>("Examinable Items/" + ExaminerImage);
         }
 
