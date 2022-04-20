@@ -195,6 +195,8 @@ MonoBehaviour:
   SFXMixer: {fileID: 24100000, guid: c50b3316723b81b4496402c23ba08747, type: 2}
   ToggleMusic: {fileID: 4780114884453147451}
   ToggleSFX: {fileID: 4780114883485040000}
+  MusicSource: {fileID: 0}
+  SFXSource: {fileID: 0}
 --- !u!1 &4780114883469929030
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,7 +1019,7 @@ GameObject:
   - component: {fileID: 3921603265773408783}
   - component: {fileID: 5406167090850823677}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
