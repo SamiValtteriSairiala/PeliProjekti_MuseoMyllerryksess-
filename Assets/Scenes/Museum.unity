@@ -14785,6 +14785,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 12ac2a68b97528b4abf3921b036aedb3, type: 3}
     - target: {fileID: 4944016006714525313, guid: 63793d20b2704fb42ad2b6bfc757a6a4, type: 3}
+      propertyPath: NoteSource
+      value: 
+      objectReference: {fileID: 397940975}
+    - target: {fileID: 4944016006714525313, guid: 63793d20b2704fb42ad2b6bfc757a6a4, type: 3}
       propertyPath: itemExaminer
       value: 
       objectReference: {fileID: 689018009}
