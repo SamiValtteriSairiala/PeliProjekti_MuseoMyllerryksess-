@@ -43,7 +43,7 @@ public class PauseTimer : MonoBehaviour
         
     }
     IEnumerator Wait(){
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         
         if(textCol.a < 64){
             finalNoteCol.a += Time.deltaTime/3;
