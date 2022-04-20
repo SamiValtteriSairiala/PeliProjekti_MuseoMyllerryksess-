@@ -15,6 +15,7 @@ public class DestroyOnclick : MonoBehaviour, IInteractable
     [SerializeField] private GameObject checkIfDestroyed2;
     [SerializeField] private GameObject checkIfDestroyed3;
     [SerializeField] private GameObject toFinish;
+    [SerializeField] private GameObject note;
 
 
     public void Interact()
@@ -27,7 +28,9 @@ public class DestroyOnclick : MonoBehaviour, IInteractable
         if(checkIfDestroyed1 == null && checkIfDestroyed2 == null && checkIfDestroyed3 == null){
             toFinish.SetActive(true);
         }
-        
+        if(gameObject.name == "girlll"){
+            note.SetActive(true);
+        }
     }
 
     // Start is called before the first frame update

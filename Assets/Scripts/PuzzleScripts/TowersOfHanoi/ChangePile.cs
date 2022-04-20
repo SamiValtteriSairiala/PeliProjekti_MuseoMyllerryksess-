@@ -11,8 +11,11 @@ public class ChangePile : MonoBehaviour, IInteractable
 {
     // Pile where the selected book will move
     private Transform newPile;
+    [SerializeField] private int secondsToWait;
+    [SerializeField] private GameObject office;
+    [SerializeField] private GameObject hanoi;
     [SerializeField] private GameObject toActivate;
-    //[SerializeField] private GameObject toDeactivate;
+    [SerializeField] private GameObject toDeactivate;
     
         public void Interact()
         {
@@ -75,16 +78,19 @@ public class ChangePile : MonoBehaviour, IInteractable
             if(GameObject.Find("BookshelfClickbox3").transform.childCount == 5){
                 Debug.Log("laaatiiinooooooo breeeeiiik?");
                 toActivate.SetActive(true);
-                // toDeactivate.SetActive(false);
-                
-
-                // TODO! do the win dance (aka latino break)
+                toDeactivate.SetActive(false);
+                StartCoroutine(Wait());
         }
             else{
                 Debug.Log("ku ei nii ei");
 
                 // don't do it (latino break stop)
             }
+        }
+        IEnumerator Wait(){
+            yield return new WaitForSeconds(secondsToWait);
+            office.SetActive(true);
+            hanoi.SetActive(false);
         }
        
 }
