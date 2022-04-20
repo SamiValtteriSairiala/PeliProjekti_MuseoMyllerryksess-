@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 public class WireScript : MonoBehaviour
 {
-    float[] rotations = { 0, 90, 180, 270};
+    float[] rotations = { 0, 90, 180, 270 };
     // private bool isRotating = false;
     public float[] correctRotation;
     int PossibleRots = 1;
@@ -20,7 +20,7 @@ public class WireScript : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
         if (PossibleRots >= 2)
         {
-            if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1  || Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < 1)
+            if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1 || Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < 1)
             {
                 Debug.Log(gameObject + "Start Correct");
                 isCorrectPlaced = true;
@@ -36,21 +36,21 @@ public class WireScript : MonoBehaviour
             // }
 
         }
-            
+
         else
         {
             if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1)
             {
-                
+
                 Debug.Log(gameObject + "L piece start correct");
                 isCorrectPlaced = true;
                 Manager.CorrectMove();
             }
         }
-        
-        
-         
-                
+
+
+
+
         // else
         // {
         //     if (transform.eulerAngles.z == correctRotation[0])
@@ -64,36 +64,39 @@ public class WireScript : MonoBehaviour
     }
     private void OnMouseDown()
     {
-        // isRotating = true;
-        transform.Rotate(new Vector3(0, 0, 90f));
-        if (PossibleRots > 1)
+        if (Manager.AllCorrect == false)
         {
-            // if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false || transform.eulerAngles.z == correctRotation[1] && isCorrectPlaced == false)
-            if(Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1 && isCorrectPlaced == false || Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < 1 && isCorrectPlaced == false)
+            // isRotating = true;
+            transform.Rotate(new Vector3(0, 0, 90f));
+            if (PossibleRots > 1)
             {
-                isCorrectPlaced = true;
-                Manager.CorrectMove();
-                Debug.Log(gameObject + " is correct");
+                // if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false || transform.eulerAngles.z == correctRotation[1] && isCorrectPlaced == false)
+                if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1 && isCorrectPlaced == false || Mathf.Abs(transform.eulerAngles.z - correctRotation[1]) < 1 && isCorrectPlaced == false)
+                {
+                    isCorrectPlaced = true;
+                    Manager.CorrectMove();
+                    Debug.Log(gameObject + " is correct");
+                }
+                else if (isCorrectPlaced == true)
+                {
+                    isCorrectPlaced = false;
+                    Manager.WrongMove();
+                }
             }
-            else if (isCorrectPlaced == true)
+            else
             {
-                isCorrectPlaced = false;
-                Manager.WrongMove();
-            }
-        }
-        else
-        {
-            // if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false)
-            if(Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1 && isCorrectPlaced == false)
-            {
-                isCorrectPlaced = true;
-                Manager.CorrectMove();
-                Debug.Log(gameObject + " is  correct");
-            }
-            else if (isCorrectPlaced == true)
-            {
-                isCorrectPlaced = false;
-                Manager.WrongMove();
+                // if (transform.eulerAngles.z == correctRotation[0] && isCorrectPlaced == false)
+                if (Mathf.Abs(transform.eulerAngles.z - correctRotation[0]) < 1 && isCorrectPlaced == false)
+                {
+                    isCorrectPlaced = true;
+                    Manager.CorrectMove();
+                    Debug.Log(gameObject + " is  correct");
+                }
+                else if (isCorrectPlaced == true)
+                {
+                    isCorrectPlaced = false;
+                    Manager.WrongMove();
+                }
             }
         }
     }

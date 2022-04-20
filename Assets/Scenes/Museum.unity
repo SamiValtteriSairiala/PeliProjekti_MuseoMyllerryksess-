@@ -8080,6 +8080,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 737308837}
     - target: {fileID: 2572110025189699866, guid: 38ec17e458bb2bf44827cf49fad0b537, type: 3}
+      propertyPath: sahkotpaalle
+      value: 
+      objectReference: {fileID: 8300000, guid: d5c0c747cc0451240a158d997abc143c, type: 3}
+    - target: {fileID: 2572110025189699866, guid: 38ec17e458bb2bf44827cf49fad0b537, type: 3}
       propertyPath: NotReadyObject
       value: 
       objectReference: {fileID: 770657565}

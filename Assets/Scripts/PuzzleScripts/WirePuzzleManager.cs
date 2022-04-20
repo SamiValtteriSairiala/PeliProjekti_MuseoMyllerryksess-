@@ -14,6 +14,7 @@ public class WirePuzzleManager : MonoBehaviour
     [SerializeField] private GameObject NotReadyObject;
     public AudioSource ElectricAudioSource;
     public AudioClip sahkotpaalle;
+    public bool AllCorrect = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -33,6 +34,7 @@ public class WirePuzzleManager : MonoBehaviour
         {
             ElectricAudioSource.PlayOneShot(sahkotpaalle);
             Debug.Log("Won");
+            AllCorrect = true;
             ReadyObject.SetActive(true);
             NotReadyObject.SetActive(false);
             RoomManager.WirePuzzleComplete();

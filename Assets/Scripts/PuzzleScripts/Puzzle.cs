@@ -36,7 +36,7 @@ namespace PuzzleScript
                 if (hit)
                 {
                     Debug.Log(hit.transform.name);
-                    if (Vector2.Distance(emptySpace.position, hit.transform.position) < 4.0)
+                    if (Vector2.Distance(emptySpace.position, hit.transform.position) < 3.45)
                     {
                         Vector2 lastEmptySpacePos = emptySpace.position;
                         TileScript thisTile = hit.transform.GetComponent<TileScript>();
