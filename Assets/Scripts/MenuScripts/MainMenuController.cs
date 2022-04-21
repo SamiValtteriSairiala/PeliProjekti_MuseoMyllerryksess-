@@ -13,11 +13,12 @@ public class MainMenuController : MonoBehaviour
     [SerializeField] private GameObject SettingsMenu;
     [SerializeField] private GameObject MainMenu;
 
-
+    public GameObject SoundManager;
     // Start is called before the first frame update
     void Start()
     {
         SettingsMenu.SetActive(false);
+        SoundManager = GameObject.Find("SoundManager");
     }
 
     // Update is called once per frame
@@ -72,6 +73,7 @@ public class MainMenuController : MonoBehaviour
     }
 
     public void CreditsButton(){
+        Destroy(SoundManager);
         SceneManager.LoadScene("Credits");
     }
 

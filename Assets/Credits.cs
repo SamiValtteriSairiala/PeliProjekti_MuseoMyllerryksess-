@@ -20,7 +20,7 @@ public class Credits : MonoBehaviour
 
     public void MainMenu()
     {
-        Destroy(SoundManager);
+        
         SceneManager.LoadScene("MainMenu");
     }
 
