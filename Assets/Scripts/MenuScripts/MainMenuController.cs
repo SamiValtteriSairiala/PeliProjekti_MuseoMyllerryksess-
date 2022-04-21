@@ -71,6 +71,10 @@ public class MainMenuController : MonoBehaviour
 
     }
 
+    public void CreditsButton(){
+        SceneManager.LoadScene("Credits");
+    }
+
 
 }
 
