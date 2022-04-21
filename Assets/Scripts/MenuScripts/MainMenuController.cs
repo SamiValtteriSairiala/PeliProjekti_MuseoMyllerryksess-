@@ -73,7 +73,7 @@ public class MainMenuController : MonoBehaviour
     }
 
     public void CreditsButton(){
-        Destroy(SoundManager);
+        Destroy(SoundManager);                                                                                                
         SceneManager.LoadScene("Credits");
     }
 

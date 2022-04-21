@@ -49,7 +49,7 @@ public class GoalPath : MonoBehaviour
                 if (PathPuzzle.CorrectTile == 5)
                 {
 
-
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     FirstNumber1.sprite = Sprite1;
                     // Change sprite.                      
                     // ChangeSprite();
@@ -57,7 +57,7 @@ public class GoalPath : MonoBehaviour
                     //Add something here that happens when winning.
                     GreenTile = true;
                     ChangeSprite();
-                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
+                    
                     Invoke("ChangeToSecond", 0.3f);
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
@@ -70,7 +70,7 @@ public class GoalPath : MonoBehaviour
                 if (PathPuzzle.CorrectTile == 3)
                 {
 
-
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                    FirstNumber1.sprite = Sprite1;
                    SecondNumber7.sprite = Sprite2;
                     // Change sprite.                      
@@ -78,7 +78,7 @@ public class GoalPath : MonoBehaviour
                     // Correct move.
                     //Add something here that happens when winning.
                     GreenTile = true;
-                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
+                    
                     ChangeSprite();
                     Invoke("ChangeToThird", 0.3f);
                     PathPuzzle.CorrectTile = 0;
@@ -92,13 +92,13 @@ public class GoalPath : MonoBehaviour
                 if (PathPuzzle.CorrectTile == 7)
                 {
 
-
+                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     FirstNumber1.sprite = Sprite1;
                    SecondNumber7.sprite = Sprite2;
                    ThirdNumber4.sprite = Sprite3;
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
-                    LaivaPuzzleAudioSource.PlayOneShot(Numero);
+                    
                     Debug.Log("Goal!");
                     // Change sprite.                      
                     // ChangeSprite();
