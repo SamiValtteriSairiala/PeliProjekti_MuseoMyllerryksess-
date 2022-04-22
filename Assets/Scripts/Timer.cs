@@ -26,6 +26,7 @@ public class Timer : MonoBehaviour
     [SerializeField] private GameObject gameOverScreen;
 
     [SerializeField] private int timeLimitMinutes;
+    [SerializeField] private int timeLimitHours;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,11 +49,12 @@ public class Timer : MonoBehaviour
         }
         TimerText.text = hour.ToString("00") + ":" + minutes.ToString("00");
         
-        if(minutes >= timeLimitMinutes){
+        if(minutes >= timeLimitMinutes && hour >= timeLimitHours){
             toDeactivate.SetActive(false);
             toDeactivate2.SetActive(false);
             toDeactivate3.SetActive(false);
             gameOverScreen.SetActive(true);
+            minutes = 60;
         }
     }
     public void StartTimer(){
