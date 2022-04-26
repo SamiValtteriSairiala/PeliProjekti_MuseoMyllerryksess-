@@ -13,11 +13,15 @@ public class PauseTimer : MonoBehaviour
     [SerializeField] private Image imageToFade;
     [SerializeField] private Text imageText;
     [SerializeField] private Image finalNote;
+    [SerializeField] private Image creditsButton;
+    [SerializeField] private TMP_Text creditsText;
     Color textCol;
     Color imgCol;
     Color finalTimeCol;
     Color imgTextCol;
     Color finalNoteCol;
+    Color creditsButtonCol;
+    Color creditsTextCol;
     void Start()
     {
         Timer.PauseTimer();
@@ -26,16 +30,22 @@ public class PauseTimer : MonoBehaviour
         finalTimeCol = finalTime.color;
         imgTextCol = imageText.color;
         finalNoteCol = finalNote.color;
+        creditsButtonCol = creditsButton.color;
+        creditsTextCol = creditsText.color;
         textCol.a = 0;
         imgCol.a = 0;
         finalTimeCol.a = 0;
         imgTextCol.a = 0;
         finalNoteCol.a = 0;
+        creditsButtonCol.a = 0;
+        creditsTextCol.a = 0;
         FadeInText.color = textCol;
         imageToFade.color = imgCol;
         finalTime.color = finalTimeCol;
         imageText.color = imgTextCol;
         finalNote.color = finalNoteCol;
+        creditsButton.color = creditsButtonCol;
+        creditsText.color = creditsTextCol;
     }
     void Update(){
 
@@ -51,12 +61,16 @@ public class PauseTimer : MonoBehaviour
             imgCol.a += Time.deltaTime/3;
             finalTimeCol.a += Time.deltaTime/3;
             imgTextCol.a += Time.deltaTime/3;
+            creditsButtonCol.a += Time.deltaTime/3;
+            creditsTextCol.a += Time.deltaTime/3;
             
             finalNote.color = finalNoteCol;
             FadeInText.color = textCol;
             imageToFade.color = imgCol;
             finalTime.color = finalTimeCol;
             imageText.color = imgTextCol;
+            creditsButton.color = creditsButtonCol;
+            creditsText.color = creditsTextCol;
         }
         else if(textCol.a >=64 && textCol.a < 256){
             finalNoteCol.a += Time.deltaTime/2;
@@ -64,12 +78,16 @@ public class PauseTimer : MonoBehaviour
             imgCol.a += Time.deltaTime/2;
             finalTimeCol.a += Time.deltaTime/2;
             imgTextCol.a += Time.deltaTime/2;
+            creditsButtonCol.a += Time.deltaTime/2;
+            creditsTextCol.a += Time.deltaTime/2;
 
             finalNote.color = finalNoteCol;
             FadeInText.color = textCol;
             imageToFade.color = imgCol;
             finalTime.color = finalTimeCol;
             imageText.color = imgTextCol;
+            creditsButton.color = creditsButtonCol;
+            creditsText.color = creditsTextCol;
         }
         /*else if(col.a >=128 && col.a < 256){
             col.a += Time.deltaTime/2;
