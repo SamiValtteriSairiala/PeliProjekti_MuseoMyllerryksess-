@@ -504,16 +504,16 @@ MonoBehaviour:
   m_text: "CREDITS\n\n\n\n\rPROGRAMMERING\n\nSami Sairiala \r\n\r\nHenri Pyk\xE4l\xE4inen
     \r\n\n\r\n\n\rART\n\nJohanna Saukkonen \r\n\r \n\n\nGAME DESIGN\n\nJohanna Saukkonen\n\nHenri
     Pyk\xE4l\xE4inen\r\n\n\n\n\rPROJECT LEAD\n\nEssi Ryyn\xE4nen \r\n\r\n\n\nUX DESIGN\n\nEssi
-    Ryyn\xE4nen \r\r\n\n\r\n\nSTOCK SOUNDS\n\nPixabay.com \r\n\r\n\n\n\rMUSIC \n\nGioeleFazzeri
-    \r\n\n\r\n\nSFX\n\r\nBeep Sound by Edr \r\n\r\nbeep beep by Kodack \r\n\r\nDoor
-    unlocking with keys by Lightnessko \r\n\r\nELECTRIC ZAP 001 by JoelAudio \r\n\r\r\nWhaves
-    hitting the rocks by CaganCelik \r\n\r\nKnife thrust into wall by NeoSpica \r\n\r\nWooden
-    chair, push in, pull out.wav by SpliceSound \r\n\r\nFlipping through a book.mp3
-    by Zeinel \r\n\r\nBell.wav by mystiscool \r\n\n\n\n\rLOCALIZATION EN/FIN\n\r\nEssi
-    Ryyn\xE4nen \r\n\r\nJohanna Saukkonen \n\n\n\nTESTING\n\nElla Kataja \r\n\r\nTerhi
-    J\xE4rvinen \r\n\r\nAino Sintonen \r\n\r\nTuomas Aalto \r\n\r\nTuomas Antikainen
-    \r\n\r\nEetu Hentunen \r\n\r\nJoni Jyrinki \r\n\r\nKaisa Hakola \r\n\r\nJesse
-    Lepp\xE4 \r\n\r\nJordan Hughes \n\n "
+    Ryyn\xE4nen \r\r\n\n\nANIMATION\n\nSami Sairiala\n\n\r\n\nSTOCK SOUNDS\n\nPixabay.com
+    \r\n\r\n\n\n\rMUSIC \n\nGioeleFazzeri \r\n\n\r\n\nSFX\n\r\nBeep Sound by Edr
+    \r\n\r\nbeep beep by Kodack \r\n\r\nDoor unlocking with keys by Lightnessko \r\n\r\nELECTRIC
+    ZAP 001 by JoelAudio \r\n\r\r\nWhaves hitting the rocks by CaganCelik \r\n\r\nKnife
+    thrust into wall by NeoSpica \r\n\r\nWooden chair, push in, pull out.wav by SpliceSound
+    \r\n\r\nFlipping through a book.mp3 by Zeinel \r\n\r\nBell.wav by mystiscool
+    \r\n\n\n\n\rLOCALIZATION EN/FIN\n\r\nEssi Ryyn\xE4nen \r\n\r\nJohanna Saukkonen
+    \n\n\n\nTESTING\n\nElla Kataja \r\n\r\nTerhi J\xE4rvinen \r\n\r\nAino Sintonen
+    \r\n\r\nTuomas Aalto \r\n\r\nTuomas Antikainen \r\n\r\nEetu Hentunen \r\n\r\nJoni
+    Jyrinki \r\n\r\nKaisa Hakola \r\n\r\nJesse Lepp\xE4 \r\n\r\nJordan Hughes \n\n "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
