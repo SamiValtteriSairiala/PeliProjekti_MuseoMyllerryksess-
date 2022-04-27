@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using InventoryScripts;
 
 public class GoalPath : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private Sprite Sprite1;
     [SerializeField] private Sprite Sprite2;
     [SerializeField] private Sprite Sprite3;
+    private GameObject inventory;
 
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
@@ -34,6 +36,9 @@ public class GoalPath : MonoBehaviour
     public AudioSource LaivaPuzzleAudioSource;
     public AudioClip Numero;
     // Start is called before the first frame update
+    void Start(){
+        inventory = GameObject.Find("Inventory");
+    }
     void Awake()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -134,8 +139,10 @@ public class GoalPath : MonoBehaviour
     }
     public void ClosePuzzle()
     {
-        WholePathPuzzle.SetActive(false);
-        DownStairs.SetActive(true);
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            WholePathPuzzle.SetActive(false);
+            DownStairs.SetActive(true);
+        }
     }
     void ChangeSprite()
     {

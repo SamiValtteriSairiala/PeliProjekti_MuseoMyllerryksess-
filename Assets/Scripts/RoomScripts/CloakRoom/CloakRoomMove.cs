@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using InventoryScripts;
 
 public class CloakRoomMove : MonoBehaviour
 {
@@ -12,12 +13,14 @@ public class CloakRoomMove : MonoBehaviour
 
     private GameObject GameManager;
     private BlackScreen BlackScreenScript;
+    private GameObject inventory;
 
     // Start is called before the first frame update
     void Start()
     {
         GameManager = GameObject.Find("GameManager");
         BlackScreenScript = GameManager.GetComponent<BlackScreen>();
+        inventory = GameObject.Find("Inventory");
     }
 
     // Update is called once per frame
@@ -30,24 +33,30 @@ public class CloakRoomMove : MonoBehaviour
     }
 
     public void MoveLeft(){
-        CloakRoom.SetActive(false);
-        BlackScreenScript.BlackenScreen();
-        BlackScreenScript.PlayStep();
-        LobbyScreen.SetActive(true);
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            CloakRoom.SetActive(false);
+            BlackScreenScript.BlackenScreen();
+            BlackScreenScript.PlayStep();
+            LobbyScreen.SetActive(true);
+        }
     }
 
 
     public void OpenSafetyBox(){
-        SafetyBox.SetActive(true);
-        BlackScreenScript.BlackenScreen();
-        BlackScreenScript.PlayStep();
-        CloakRoomImage.SetActive(false);
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            SafetyBox.SetActive(true);
+            BlackScreenScript.BlackenScreen();
+            BlackScreenScript.PlayStep();
+            CloakRoomImage.SetActive(false);
+        }
     }
 
     public void BackToCloakRoom(){
-        CloakRoomImage.SetActive(true);
-        BlackScreenScript.BlackenScreen();
-        BlackScreenScript.PlayStep();
-        SafetyBox.SetActive(false);
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            CloakRoomImage.SetActive(true);
+            BlackScreenScript.BlackenScreen();
+            BlackScreenScript.PlayStep();
+            SafetyBox.SetActive(false);
+        }
     }
 }

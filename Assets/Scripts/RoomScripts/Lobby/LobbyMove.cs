@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using InventoryScripts;
 
 public class LobbyMove : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class LobbyMove : MonoBehaviour
     [SerializeField] private GameObject SecondFloor;
     [SerializeField] private GameObject WirePuzzle;
     [SerializeField] private GameObject ElectricBox;
+    private GameObject inventory;
 
     // Start is called before the first frame update
     private GameObject GameManager;
@@ -21,6 +23,7 @@ public class LobbyMove : MonoBehaviour
         GameManager = GameObject.Find("GameManager");
         BlackScreenScript = GameManager.GetComponent<BlackScreen>();
         TimerScript = GameManager.GetComponent<Timer>();
+        inventory = GameObject.Find("Inventory");
     }
 
     // Update is called once per frame
@@ -31,17 +34,19 @@ public class LobbyMove : MonoBehaviour
 
     public void MoveRight()
     {
-        LobbyScreen.SetActive(false);
-        BlackScreenScript.BlackenScreen();
-        BlackScreenScript.PlayStep();
-        CloakRoom.SetActive(true);
-        Debug.Log("Switching scene");
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            LobbyScreen.SetActive(false);
+            BlackScreenScript.BlackenScreen();
+            BlackScreenScript.PlayStep();
+            CloakRoom.SetActive(true);
+            Debug.Log("Switching scene");
+        }
     }
 
     public void MoveUp()
     {
         // Only able to go to upstairs after timer starts.
-        if (TimerScript.TimerPaused == false)
+        if (TimerScript.TimerPaused == false && inventory.GetComponent<Inventory>().currentSelectedSlot == null)
         {
             LobbyScreen.SetActive(false);
             BlackScreenScript.BlackenScreen();
@@ -53,7 +58,7 @@ public class LobbyMove : MonoBehaviour
 
     public void OpenWirePuzzle()
     {
-        if (TimerScript.TimerPaused == false)
+        if (TimerScript.TimerPaused == false && inventory.GetComponent<Inventory>().currentSelectedSlot == null)
         {
             ElectricBox.SetActive(true);
             LobbyScreen.SetActive(false);
@@ -61,9 +66,11 @@ public class LobbyMove : MonoBehaviour
     }
     public void BackToLobby()
     {
-        ElectricBox.SetActive(false);
-        BlackScreenScript.BlackenScreen();
-        LobbyScreen.SetActive(true);
+        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            ElectricBox.SetActive(false);
+            BlackScreenScript.BlackenScreen();
+            LobbyScreen.SetActive(true);
+        }
     }
 
 
