@@ -27,15 +27,49 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 50908300517376
-    m_Localized: MUTE SOUND
+    m_Localized: SOUND
     m_Metadata:
       m_Items: []
   - m_Id: 54911805628416
-    m_Localized: MUTE MUSIC
+    m_Localized: MUSIC
     m_Metadata:
       m_Items: []
   - m_Id: 54974854406144
     m_Localized: CREDITS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282668422602752
+    m_Localized: "To do: \r\n\r- Put your coat on the rack \r\n\r- Open your locker
+      \r\n\r- Remember to take your things \r\n\r- Check that the upstairs exhibition
+      is in order \r\n\r- Turn on the downstairs lights \r\n- Open the doors at 9:00 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8646491328159744
+    m_Localized: "Someone told me that there are fossils down here.\n \n\r\rThough,
+      I haven\u2019t seen any. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8647603183624192
+    m_Localized: 'I could swear there used to be a door to the attic here.
+
+      
+
+      -
+      Jokinen '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648457781452800
+    m_Localized: "I\u2019m sorry I messed up the exhibition. I hope youll be able
+      to open the doors in time."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8649794627772416
+    m_Localized: 'Congratulations! You finished the game. There is still time for
+      coffee. '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8650395344379904
+    m_Localized: Main menu
     m_Metadata:
       m_Items: []
   references:

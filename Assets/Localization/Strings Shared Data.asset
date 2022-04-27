@@ -35,6 +35,30 @@ MonoBehaviour:
     m_Key: Credits
     m_Metadata:
       m_Items: []
+  - m_Id: 282668422602752
+    m_Key: TutorialNote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8646491328159744
+    m_Key: FossilsNote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8647603183624192
+    m_Key: OfficeNote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648457781452800
+    m_Key: AtticNote
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8649794627772416
+    m_Key: GoodEnding
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8650395344379904
+    m_Key: BackToMain
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
