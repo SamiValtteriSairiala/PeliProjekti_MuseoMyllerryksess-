@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 namespace Hanoi{
 
@@ -16,6 +17,9 @@ public class ChangePile : MonoBehaviour, IInteractable
     [SerializeField] private GameObject hanoi;
     [SerializeField] private GameObject toActivate;
     [SerializeField] private GameObject toDeactivate;
+
+    public AudioSource KirjahyllyAudio;
+    public AudioClip Kirjahyllyliikutus;
     
         public void Interact()
         {
@@ -78,6 +82,7 @@ public class ChangePile : MonoBehaviour, IInteractable
             if(GameObject.Find("BookshelfClickbox3").transform.childCount == 5){
                 Debug.Log("laaatiiinooooooo breeeeiiik?");
                 toActivate.SetActive(true);
+                KirjahyllyAudio.PlayOneShot(Kirjahyllyliikutus);
                 toDeactivate.SetActive(false);
                 StartCoroutine(Wait());
         }
