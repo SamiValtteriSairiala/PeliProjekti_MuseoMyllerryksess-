@@ -149,10 +149,9 @@ public class GoalPath : MonoBehaviour
             DownStairs.SetActive(true);
         }
         }
-        if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+
             WholePathPuzzle.SetActive(false);
             DownStairs.SetActive(true);
-        }
         
     }
     void ChangeSprite()
