@@ -2155,10 +2155,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Timer: {fileID: 1094044086}
-  FadeInText: {fileID: 0}
+  FadeInText: {fileID: 1452232736}
   finalTime: {fileID: 1452232736}
   imageToFade: {fileID: 1452232737}
-  imageText: {fileID: 0}
+  imageText: {fileID: 1452232736}
   finalNote: {fileID: 1452232737}
   creditsButton: {fileID: 1711663668}
   creditsText: {fileID: 1452232736}
@@ -3121,7 +3121,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &319850000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12620,8 +12620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -202}
-  m_SizeDelta: {x: 300, y: 69.25}
+  m_AnchoredPosition: {x: 0, y: -179.6}
+  m_SizeDelta: {x: 300.83, y: 54.31}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991923811 stripped
 MonoBehaviour:
@@ -15101,6 +15101,10 @@ PrefabInstance:
     - target: {fileID: 4780114883339720304, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780114883339720306, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
+      propertyPath: m_ScreenMatchMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4780114883339720588, guid: 4f1bf9e7b19e4784c8e4590404f6a433, type: 3}
       propertyPath: m_Pivot.x
