@@ -25,7 +25,7 @@ public class DestroyOnclick : MonoBehaviour, IInteractable
         toActivate.SetActive(true);
         toActivate2.SetActive(true);
 
-        if(checkIfDestroyed1 == null && checkIfDestroyed2 == null && checkIfDestroyed3 == null){
+        if(checkIfDestroyed2 == null && checkIfDestroyed3 == null){
             toFinish.SetActive(true);
         }
         if(gameObject.name == "girlll"){

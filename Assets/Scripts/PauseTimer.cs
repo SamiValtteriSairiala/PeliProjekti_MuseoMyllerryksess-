@@ -8,10 +8,10 @@ public class PauseTimer : MonoBehaviour
 {
     // Pauses timer and fades in text
     [SerializeField] private Timer Timer;
-    [SerializeField] private Text FadeInText;
+    [SerializeField] private TMP_Text FadeInText;
     [SerializeField] private TMP_Text finalTime;
     [SerializeField] private Image imageToFade;
-    [SerializeField] private Text imageText;
+    [SerializeField] private TMP_Text imageText;
     [SerializeField] private Image finalNote;
     [SerializeField] private Image creditsButton;
     [SerializeField] private TMP_Text creditsText;
