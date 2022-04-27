@@ -59,6 +59,46 @@ MonoBehaviour:
     m_Key: BackToMain
     m_Metadata:
       m_Items: []
+  - m_Id: 8657469256179712
+    m_Key: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676235927035904
+    m_Key: 'BadConscience '
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676384971628544
+    m_Key: OilPainting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676508149948416
+    m_Key: TampereArtMuseum
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676584494669824
+    m_Key: GardenOfDeath
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676906881458176
+    m_Key: LineEtching
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8676996002029568
+    m_Key: BoatsLament
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8677282154225664
+    m_Key: oilPainting
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8677488144883712
+    m_Key: infotext
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8685444437581824
+    m_Key: creditsScreen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
