@@ -64,8 +64,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8649794627772416
-    m_Localized: 'Congratulations! You finished the game. There is still time for
-      coffee. '
+    m_Localized: 'Congratulations! You managed to open the doors in time. And there
+      is still time for coffee. '
     m_Metadata:
       m_Items: []
   - m_Id: 8650395344379904
