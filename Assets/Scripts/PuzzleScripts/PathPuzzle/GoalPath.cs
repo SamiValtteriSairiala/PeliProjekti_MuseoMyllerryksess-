@@ -27,6 +27,7 @@ public class GoalPath : MonoBehaviour
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
     public bool ReachedGoal3 = false;
+    public Sprite KariSprite;
 
     public bool GreenTile = false;
 
@@ -105,7 +106,7 @@ public class GoalPath : MonoBehaviour
                    ThirdNumber4.sprite = Sprite3;
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
-                    
+                    PathPuzzle.End = true;
                     Debug.Log("Goal!");
                     // Change sprite.                      
                     // ChangeSprite();
@@ -157,5 +158,9 @@ public class GoalPath : MonoBehaviour
     void ChangeSprite()
     {
         spriteRenderer.color = Color.green;
+        if(ThirdNumber.activeInHierarchy == true){
+            spriteRenderer.sprite = KariSprite;
+            
+        }
     }
 }
