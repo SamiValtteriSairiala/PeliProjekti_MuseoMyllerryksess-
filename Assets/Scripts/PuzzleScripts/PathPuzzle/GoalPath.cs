@@ -34,7 +34,9 @@ public class GoalPath : MonoBehaviour
 
     [SerializeField] private CheckpointPath checkPoint;
     public AudioSource LaivaPuzzleAudioSource;
+    public AudioSource gameCanvasAudio;
     public AudioClip Numero;
+    public AudioClip Karille;
     // Start is called before the first frame update
     void Start(){
         inventory = GameObject.Find("Inventory");
@@ -139,10 +141,18 @@ public class GoalPath : MonoBehaviour
     }
     public void ClosePuzzle()
     {
+        if(ThirdNumber.activeInHierarchy == true){
+            if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            WholePathPuzzle.SetActive(false);
+            gameCanvasAudio.PlayOneShot(Karille);
+            DownStairs.SetActive(true);
+        }
+        }
         if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
             WholePathPuzzle.SetActive(false);
             DownStairs.SetActive(true);
         }
+        
     }
     void ChangeSprite()
     {
