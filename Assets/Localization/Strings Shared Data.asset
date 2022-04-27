@@ -95,6 +95,10 @@ MonoBehaviour:
     m_Key: infotext
     m_Metadata:
       m_Items: []
+  - m_Id: 8685444437581824
+    m_Key: creditsScreen
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
