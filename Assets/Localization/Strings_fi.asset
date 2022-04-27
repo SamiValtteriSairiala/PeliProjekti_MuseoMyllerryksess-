@@ -27,15 +27,46 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 50908300517376
-    m_Localized: "\xC4\xC4NET POIS"
+    m_Localized: "\xC4\xC4NET"
     m_Metadata:
       m_Items: []
   - m_Id: 54911805628416
-    m_Localized: MUSIIKKI POIS
+    m_Localized: MUSIIKKI
     m_Metadata:
       m_Items: []
   - m_Id: 54974854406144
-    m_Localized: CREDITS
+    m_Localized: "TEKIJ\xC4T"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 282668422602752
+    m_Localized: "Muistilista \r\n\r- Laita takki naulaan \r\n- Avaa lokerikko \r\n\r-
+      Muista ottaa kaikki tavarasi mukaan \r\n\r- Tarkista, ett\xE4 yl\xE4kerran
+      n\xE4yttely on kunnossa \r\n\r- Laita alakerran valot p\xE4\xE4lle \r\n\r-
+      Avaa ovet 9:00 "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8646491328159744
+    m_Localized: "Joku v\xE4itti ett\xE4 t\xE4\xE4ll\xE4 olisi fossiileja.\n\n\rItse
+      en niit\xE4 kyll\xE4 ole n\xE4hnyt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8647603183624192
+    m_Localized: "Voisin vaikka vannoa ett\xE4 t\xE4\xE4ll\xE4 oli ovi ullakolle.\r\n\r\nt.
+      Jokinen "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8648457781452800
+    m_Localized: "Anteeksi, ett\xE4 sotkin n\xE4yttelyn, toivottavasti enn\xE4t\xE4t
+      avaamaan ovet ajoissa."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8649794627772416
+    m_Localized: "Onneksi olkoon! P\xE4\xE4sit pelin l\xE4pin. Aikaa j\xE4i viel\xE4
+      kahveillekin. "
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8650395344379904
+    m_Localized: "P\xE4\xE4valikkoon"
     m_Metadata:
       m_Items: []
   references:
