@@ -8209,6 +8209,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8947775980867635520}
     - target: {fileID: 1901178135, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
+      propertyPath: KariSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21eaa16d8b2e1a240afb7f51ee858cba, type: 3}
+    - target: {fileID: 1901178135, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: FirstNumber
       value: 
       objectReference: {fileID: 678556995}
@@ -8312,6 +8316,10 @@ PrefabInstance:
       propertyPath: DownStairs
       value: 
       objectReference: {fileID: 8947775980867635520}
+    - target: {fileID: 1953145594, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
+      propertyPath: KariSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21eaa16d8b2e1a240afb7f51ee858cba, type: 3}
     - target: {fileID: 1953145594, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: FirstNumber
       value: 
@@ -8501,6 +8509,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8947775980867635520}
     - target: {fileID: 2092847686, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
+      propertyPath: KariSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 21eaa16d8b2e1a240afb7f51ee858cba, type: 3}
+    - target: {fileID: 2092847686, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: FirstNumber
       value: 
       objectReference: {fileID: 678556995}
@@ -8528,6 +8540,10 @@ PrefabInstance:
       propertyPath: LaivaPuzzleAudioSource
       value: 
       objectReference: {fileID: 678557000}
+    - target: {fileID: 2092847687, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 474fbab5e4b7545458a271e246b05261, type: 3}
     - target: {fileID: 2105232476, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: m_Size.x
       value: 2
@@ -8667,6 +8683,10 @@ PrefabInstance:
     - target: {fileID: 8508390169503892313, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8508390170800795641, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8508390170800795644, guid: d772a3cc3bd7e064188f64113eba9c89, type: 3}
       propertyPath: m_Sprite

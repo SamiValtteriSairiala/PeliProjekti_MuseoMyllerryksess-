@@ -14,6 +14,7 @@ public class PathPuzzle : MonoBehaviour
     public float speed;
     private Vector2 targetPosition;
     private Vector2 currentPos;
+    public bool End = false;
 
     [SerializeField] private GoalPath GoalPiece;
     [SerializeField] private SpriteRenderer StartPieceRenderer;
@@ -61,8 +62,10 @@ public class PathPuzzle : MonoBehaviour
         }
         if (restart == false)
         {
+            if(End == false){
+                this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
+            }
             
-            this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
 
             if(transform.position.x < targetPosition.x && ((Mathf.Abs(targetPosition.x - this.transform.position.x) > Mathf.Abs(targetPosition.y - this.transform.position.y)))){
                 this.transform.localRotation = Quaternion.Euler(0 , 0 , -90);
@@ -117,6 +120,7 @@ public class PathPuzzle : MonoBehaviour
 
 			if (GoalScripts.ReachedGoal3)
 			{
+                End = true;
                 LaivaPuzzleAudioSource.PlayOneShot(Karille);
 			}
             //Resets player to start piece.
