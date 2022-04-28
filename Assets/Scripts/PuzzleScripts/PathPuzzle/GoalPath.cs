@@ -22,7 +22,6 @@ public class GoalPath : MonoBehaviour
     [SerializeField] private Sprite Sprite1;
     [SerializeField] private Sprite Sprite2;
     [SerializeField] private Sprite Sprite3;
-    private GameObject inventory;
 
     public bool ReachedGoal1 = false;
     public bool ReachedGoal2 = false;
@@ -39,9 +38,7 @@ public class GoalPath : MonoBehaviour
     public AudioClip Numero;
     public AudioClip Karille;
     // Start is called before the first frame update
-    void Start(){
-        inventory = GameObject.Find("Inventory");
-    }
+
     void Awake()
     {
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
@@ -143,11 +140,10 @@ public class GoalPath : MonoBehaviour
     public void ClosePuzzle()
     {
         if(ThirdNumber.activeInHierarchy == true){
-            if(inventory.GetComponent<Inventory>().currentSelectedSlot == null){
+            
             WholePathPuzzle.SetActive(false);
             gameCanvasAudio.PlayOneShot(Karille);
             DownStairs.SetActive(true);
-        }
         }
 
             WholePathPuzzle.SetActive(false);
