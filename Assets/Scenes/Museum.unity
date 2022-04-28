@@ -19217,7 +19217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti
+  ExaminerImage: kyltti_kropattu
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &1363144076
@@ -23918,7 +23918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti
+  ExaminerImage: kyltti_kropattu
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &1811977633
@@ -27084,7 +27084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti
+  ExaminerImage: kyltti_kropattu
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &2045586900
