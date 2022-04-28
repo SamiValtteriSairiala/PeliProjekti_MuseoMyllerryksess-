@@ -6191,7 +6191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &544354217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19217,7 +19217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti_kropattu
+  ExaminerImage: kyltti
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &1363144076
@@ -23918,7 +23918,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti_kropattu
+  ExaminerImage: kyltti
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &1811977633
@@ -26067,8 +26067,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 46
+  m_fontSizeBase: 46
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -27084,7 +27084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemExaminer: {fileID: 1457166303}
-  ExaminerImage: kyltti_kropattu
+  ExaminerImage: kyltti
   NoteSource: {fileID: 0}
   NoteAAni: {fileID: 0}
 --- !u!114 &2045586900
