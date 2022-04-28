@@ -58,6 +58,7 @@ public class CheckpointPath : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
+        // Adds boolean to script that main puzzle script(pathpuzzle) can check if checkpoint is reached.
         if(CollectedThis == false){
             CheckPointReached = true;
             PathPuzzle.CorrectTile ++;

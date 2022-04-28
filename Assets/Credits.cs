@@ -20,13 +20,13 @@ public class Credits : MonoBehaviour
 
     public void MainMenu()
     {
-        
+        Destroy(SoundManager);
         SceneManager.LoadScene("MainMenu");
     }
 
     public void CreditsOpen()
     {
-        Destroy(SoundManager);
+        
         SceneManager.LoadScene("Credits");
     }
 

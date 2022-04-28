@@ -5,6 +5,7 @@ using InventoryScripts;
 
 public class RoomsManager : MonoBehaviour
 {
+    // This script handles some interaction between diffrent rooms and puzzles and is always active.
     [SerializeField] private GameObject WirePuzzle;
     [SerializeField] private GameObject LobbyScreen;
     [SerializeField] private GameObject CloakRoomScreen;
@@ -36,6 +37,7 @@ public class RoomsManager : MonoBehaviour
 
     public void WirePuzzleComplete()
     {
+        // Destroys downstair shadow blocking way down.
         Destroy(Shadow);
         Debug.Log("Shadow destroyed");
         CanGoDown = true;
@@ -50,6 +52,7 @@ public class RoomsManager : MonoBehaviour
     }
     public void MoveToDownstairs()
     {
+        // Checks if shadow is destroyed.
         if (CanGoDown == true && inventory.GetComponent<Inventory>().currentSelectedSlot == null){
             CloakRoomScreen.SetActive(false);
             DownStairsScreen.SetActive(true);

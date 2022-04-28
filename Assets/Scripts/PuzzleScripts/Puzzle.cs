@@ -122,6 +122,7 @@ namespace PuzzleScript
         }
         int GetInversions()
         {
+            // Checks if it's even possible to win the puzzle after suffling.
             int inversionsSum = 0;
             for (int i = 0; i < tiles.Length; i++)
             {

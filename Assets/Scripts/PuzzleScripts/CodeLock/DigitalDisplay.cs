@@ -121,7 +121,7 @@ public class DigitalDisplay : MonoBehaviour
 
     private void CheckResults()
     {
-       
+            // Just checks if there are correct numbers which are specifyed in unity editor.
             //Put correct code here.
             if (codeSequence == CorrectCode && DownLock == true)
             {

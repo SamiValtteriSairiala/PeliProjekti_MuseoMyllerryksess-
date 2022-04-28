@@ -66,7 +66,7 @@ public class PathPuzzle : MonoBehaviour
                 this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
             }
             
-
+            // Handles boats direction in which the boat points in the correct division where user pressed.
             if(transform.position.x < targetPosition.x && ((Mathf.Abs(targetPosition.x - this.transform.position.x) > Mathf.Abs(targetPosition.y - this.transform.position.y)))){
                 this.transform.localRotation = Quaternion.Euler(0 , 0 , -90);
             }

@@ -27,6 +27,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // User can close the menu by pressing back button on their phone.
         if (PauseMenuCanvas.activeInHierarchy == true && Input.GetKeyDown(KeyCode.Escape))
         {
             ClosePauseMenu();

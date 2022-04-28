@@ -15,6 +15,7 @@ public class WireScript : MonoBehaviour
 
     void Awake()
     {
+        // Checks all the correct rotations and then check them.
         PossibleRots = correctRotation.Length;
         int rand = Random.Range(0, rotations.Length);
         transform.eulerAngles = new Vector3(0, 0, rotations[rand]);

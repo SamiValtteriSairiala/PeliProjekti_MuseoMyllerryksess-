@@ -111,20 +111,21 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8685444437581824
-    m_Localized: "CREDITS\n\n\n\n\rPROGRAMMERING\n\nSami Sairiala \r\n\r\nHenri Pyk\xE4l\xE4inen
+    m_Localized: "CREDITS\n\n\n\n\rPROGRAMMING\n\nSami Sairiala \r\n\r\nHenri Pyk\xE4l\xE4inen
       \r\n\n\r\n\n\rART\n\nJohanna Saukkonen \r\n\r \n\n\nGAME DESIGN\n\nJohanna
       Saukkonen\n\nHenri Pyk\xE4l\xE4inen\r\n\n\n\n\rPROJECT LEAD\n\nEssi Ryyn\xE4nen
-      \r\n\r\n\n\nUX DESIGN\n\nEssi Ryyn\xE4nen \r\r\n\n\r\n\nSTOCK SOUNDS\n\nPixabay.com
-      \r\n\r\n\n\n\rMUSIC \n\nGioeleFazzeri \r\n\n\r\n\nSFX\n\r\nBeep Sound by Edr
-      \r\n\r\nbeep beep by Kodack \r\n\r\nDoor unlocking with keys by Lightnessko
-      \r\n\r\nELECTRIC ZAP 001 by JoelAudio \r\n\r\r\nWhaves hitting the rocks by
-      CaganCelik \r\n\r\nKnife thrust into wall by NeoSpica \r\n\r\nWooden chair,
-      push in, pull out.wav by SpliceSound \r\n\r\nFlipping through a book.mp3 by
-      Zeinel \r\n\r\nBell.wav by mystiscool \r\n\n\n\n\rLOCALIZATION EN/FIN\n\r\nEssi
-      Ryyn\xE4nen \r\n\r\nJohanna Saukkonen \n\n\n\nTESTING\n\nElla Kataja \r\n\r\nTerhi
-      J\xE4rvinen \r\n\r\nAino Sintonen \r\n\r\nTuomas Aalto \r\n\r\nTuomas Antikainen
-      \r\n\r\nEetu Hentunen \r\n\r\nJoni Jyrinki \r\n\r\nKaisa Hakola \r\n\r\nJesse
-      Lepp\xE4 \r\n\r\nJordan Hughes \n"
+      \r\n\r\n\n\nUX DESIGN\n\nEssi Ryyn\xE4nen \r\r\n\n\n\nANIMATION\n\nSami Sairiala\n\n\r\n\nSTOCK
+      SOUNDS\n\nPixabay.com \r\n\r\n\n\n\rMUSIC \n\nGioeleFazzeri \r\nDance of the
+      Tuba Plum Fairy by Kevin MacLeod\n\n\r\n\nSFX\n\r\nBeep Sound by Edr \r\n\r\nbeep
+      beep by Kodack \r\n\r\nDoor unlocking with keys by Lightnessko \r\n\r\nELECTRIC
+      ZAP 001 by JoelAudio \r\n\r\r\nWhaves hitting the rocks by CaganCelik \r\n\r\nKnife
+      thrust into wall by NeoSpica \r\n\r\nWooden chair, push in, pull out.wav by
+      SpliceSound \r\n\r\nFlipping through a book.mp3 by Zeinel \r\n\r\nBell.wav
+      by mystiscool \r\n\n\n\n\rLOCALIZATION EN/FIN\n\r\nEssi Ryyn\xE4nen \r\n\r\nJohanna
+      Saukkonen \n\n\n\nTESTING\n\nElla Kataja \r\n\r\nTerhi J\xE4rvinen \r\n\r\nAino
+      Sintonen \r\n\r\nTuomas Aalto \r\n\r\nTuomas Antikainen \r\n\r\nEetu Hentunen
+      \r\n\r\nJoni Jyrinki \r\n\r\nKaisa Hakola \r\n\r\nJesse Lepp\xE4 \r\n\r\nJordan
+      Hughes \n"
     m_Metadata:
       m_Items: []
   references:

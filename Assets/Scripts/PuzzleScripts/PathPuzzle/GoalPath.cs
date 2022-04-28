@@ -51,9 +51,9 @@ public class GoalPath : MonoBehaviour
         {
             if (FirstNumber.activeInHierarchy == true)
             {
-                if (PathPuzzle.CorrectTile == 5)
+                if (PathPuzzle.CorrectTile == 5)    // Checks if player has collected each correct tile in current "scene".
                 {
-
+                    
                     LaivaPuzzleAudioSource.PlayOneShot(Numero);
                     FirstNumber1.sprite = Sprite1;
                     // Change sprite.                      
@@ -62,7 +62,7 @@ public class GoalPath : MonoBehaviour
                     //Add something here that happens when winning.
                     GreenTile = true;
                     ChangeSprite();
-                    
+                    // Handles change to next "scene" and resets integers.
                     Invoke("ChangeToSecond", 0.3f);
                     PathPuzzle.CorrectTile = 0;
                     PathPuzzle.WrongTile = 0;
@@ -72,7 +72,7 @@ public class GoalPath : MonoBehaviour
             }
             if (SecondNumber.activeInHierarchy == true)
             {
-                if (PathPuzzle.CorrectTile == 3)
+                if (PathPuzzle.CorrectTile == 3) // Checks if player has collected each correct tile in current "scene".
                 {
 
                     LaivaPuzzleAudioSource.PlayOneShot(Numero);
@@ -83,7 +83,7 @@ public class GoalPath : MonoBehaviour
                     // Correct move.
                     //Add something here that happens when winning.
                     GreenTile = true;
-                    
+                    // Handles change to next "scene" and resets integers.
                     ChangeSprite();
                     Invoke("ChangeToThird", 0.3f);
                     PathPuzzle.CorrectTile = 0;
@@ -94,7 +94,7 @@ public class GoalPath : MonoBehaviour
             }
             if (ThirdNumber.activeInHierarchy == true)
             {
-                if (PathPuzzle.CorrectTile == 7)
+                if (PathPuzzle.CorrectTile == 7) // Checks if player has collected each correct tile in current "scene".
                 {
 
                     LaivaPuzzleAudioSource.PlayOneShot(Numero);
